@@ -4,8 +4,8 @@ const config =   {
     mysqlConnection: {
         hostName: 'localhost',
         userName: 'root',
-        password: '',
-        dbName: 'bus'
+        password: os.hostname() == 'ubuntu' ? 'c9j98y5t' : '',
+        dbName: 'nuntius'
     },
     hashSecret: 'UfsyFLgM',
     port: os.hostname() == 'ubuntu' ? 800 : 80
