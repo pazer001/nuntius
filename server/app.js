@@ -146,6 +146,6 @@ app.post('/banners/sendBanner/', function (req, res) {
         })
 });
 
-var listener    =   app.listen(80, function () {
+var listener    =   app.listen(800, function () {
     console.log('Nuntius app listening on port ' + listener.address().port + '!');
 });
