@@ -8,8 +8,8 @@ const config =   {
         dbName: 'bus'
     },
     hashSecret: 'UfsyFLgM',
-    port: os.hostname() == 'ubuntu' ? 800 : 80,
-    URL: `http://localhost:${800}`
+    port: os.hostname() == 'ubuntu' ? 800 : 80
 };
+
 
 module.exports  =    config;

@@ -360,7 +360,6 @@ class Chat {
                             }
                         }
                         resolve(result)
-
                     })
                 }
             })

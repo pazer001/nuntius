@@ -1,5 +1,5 @@
 import ajax from 'superagent'
-import appConfig from '../../config'
+import appConfig from '../config'
 
 export function login(data) {
     const request   =   ajax.post(`${appConfig.URL}/login`)
