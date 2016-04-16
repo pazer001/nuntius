@@ -43034,7 +43034,7 @@
 	'use strict';
 
 	var config = {
-	    URL: 'http://' + location.host + ':' + (location.host == 'localhost' ? 80 : 800)
+	    URL: 'http://' + location.host
 	};
 
 	module.exports = config;
