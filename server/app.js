@@ -10,6 +10,8 @@ var mysql       =   require('mysql');
 var crypto      =   require('crypto');
 var compression =   require('compression');
 
+
+
 var app         = express();
 
 
@@ -146,6 +148,6 @@ app.post('/banners/sendBanner/', function (req, res) {
         })
 });
 
-var listener    =   app.listen(800, function () {
+var listener    =   app.listen(appConfig.port, function () {
     console.log('Nuntius app listening on port ' + listener.address().port + '!');
 });
