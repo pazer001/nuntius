@@ -1,0 +1,147 @@
+#main-navbar {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#agent-name {
+    margin-left: 1em;
+
+}
+
+.chat-box {
+    width: 20%;
+    float: left;
+}
+
+
+.chat-box .material-icons {
+    cursor: pointer;
+}
+
+.chat-box .material-icons:hover {
+    opacity: 0.75;
+
+}
+.chat-box .card-panel {
+    padding: 0px;
+    transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ease;
+}
+
+.chat-box th {
+    padding: 0px;
+}
+
+.send-button svg {
+    vertical-align: middle;
+}
+
+#chat-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #263238;
+    height: 230px;
+}
+
+#chat-wrapper li {
+    padding: 1px 1px;
+    font-size: 12px;
+}
+
+#chat-wrapper li h6 {
+    margin: 1px;
+}
+
+#chat-wrapper .messages-wrapper {
+    overflow-y: scroll;
+    height: 150px;
+    background: white;
+    cursor: auto;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.collection-fix {
+    margin: 0;
+}
+
+.chat-text {
+    width: 100%;
+    height: 50px;
+}
+
+.chat-text textarea {
+    height: 2em;
+    padding: 0px;
+    width: 128%;
+    border-radius: 2px 0px 0px 2px;
+    height: 36px;
+    margin-left: -16px;
+    background-color: #1a237e;
+    color: rgba(255, 255, 255, 1);
+}
+
+.chat-text button {
+    width: 25%;
+    float: right;
+    padding: 0;
+    height: 100%;
+    border-radius: 0;
+    outline: none;
+}
+
+.first-message {
+    margin-top: -60px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.first-message input {
+    width: 75%;
+    float: left;
+    margin: 0;
+    height: 4em;
+    color: whitesmoke;
+    text-indent: 1em;
+}
+
+.first-message button {
+    width: 25%;
+    float: right;
+    height: 4em;
+    margin: 0;
+    border-radius: 0;
+    text-indent: -10px;
+}
+
+.collection-header {
+    text-align: center;
+}
+
+#closeBannersDialog {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    left: -4em;
+    top: 0;
+    outline: none
+}
+
+#closeBannersDialog svg {
+    width: 50px;
+    height: 50px;
+    margin-top: -1px;
+    margin-left: -6px;
+    outline: none
+}
+
+.chat-box-wrapper {
+    width: 20%;
+}

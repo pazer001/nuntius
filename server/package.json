@@ -1,0 +1,34 @@
+{
+  "name": "buschat",
+  "version": "1.0.0",
+  "description": "bus chat server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paz Lazar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+
+    "axios": "^0.9.1",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "moment": "^2.12.0",
+    "react": "^0.14.7",
+    "react-redux": "^4.4.1",
+    "react-router": "^2.0.1",
+    "redux": "^3.3.1",
+    "redux-promise": "^0.5.3",
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.12.14"
+  }
+}

@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bda93b5c-2b88-4305-bd6d-6e1e30a72868" name="Default" comment="" />
+    <ignored path="buschat.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="buschat" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+              <folding>
+                <element signature="e#518#1259#0" expanded="false" />
+                <element signature="e#679#715#0" expanded="false" />
+                <element signature="e#943#1021#0" expanded="false" />
+                <element signature="e#1297#1473#0" expanded="false" />
+                <element signature="e#1853#1900#0" expanded="false" />
+                <element signature="e#1964#2343#0" expanded="false" />
+                <element signature="e#2292#2339#0" expanded="false" />
+                <element signature="e#2404#2650#0" expanded="false" />
+                <element signature="e#2599#2646#0" expanded="false" />
+                <element signature="e#3708#4017#0" expanded="false" />
+                <element signature="e#3982#4013#0" expanded="false" />
+                <element signature="e#4061#4352#0" expanded="false" />
+                <element signature="e#4317#4348#0" expanded="false" />
+                <element signature="e#4385#4444#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="115" column="231" selection-start-line="115" selection-start-column="231" selection-end-line="115" selection-end-column="231" />
+              <folding>
+                <element signature="e#826#1246#0" expanded="false" />
+                <element signature="e#868#1038#0" expanded="false" />
+                <element signature="e#902#1020#0" expanded="false" />
+                <element signature="e#1044#1201#0" expanded="false" />
+                <element signature="e#1078#1183#0" expanded="false" />
+                <element signature="e#1455#1593#0" expanded="false" />
+                <element signature="e#1481#1556#0" expanded="false" />
+                <element signature="e#2353#2446#0" expanded="false" />
+                <element signature="e#2504#2613#0" expanded="false" />
+                <element signature="e#3877#4191#0" expanded="false" />
+                <element signature="e#3904#4014#0" expanded="false" />
+                <element signature="e#4020#4146#0" expanded="false" />
+                <element signature="e#4882#5040#0" expanded="false" />
+                <element signature="e#5065#5121#0" expanded="false" />
+                <element signature="n#!!block;n#postAction#0;n#Chat#0" expanded="false" />
+                <element signature="e#6077#7131#0" expanded="false" />
+                <element signature="e#6277#7120#0" expanded="false" />
+                <element signature="e#6305#7044#0" expanded="false" />
+                <element signature="e#6489#7025#0" expanded="false" />
+                <element signature="e#6539#6751#0" expanded="false" />
+                <element signature="e#6585#6725#0" expanded="false" />
+                <element signature="e#6757#6963#0" expanded="false" />
+                <element signature="e#6803#6937#0" expanded="false" />
+                <element signature="e#7050#7106#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/agents/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DB.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response15.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/.babelrc" />
+        <option value="$PROJECT_DIR$/tools.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/DB.js" />
+        <option value="$PROJECT_DIR$/controllers/agents/index.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/controllers/chat/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="buschat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="agents" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="ter&#9;ACTION&#9;ActivateTerminalToolWindow" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\wamp\www\buschat\controllers" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:3000/chat/askForSession/1" />
+          <option name="urlPath" value="/chat/askForSession/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bda93b5c-2b88-4305-bd6d-6e1e30a72868" name="Default" comment="" />
+      <created>1457986683025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1457986683025</updated>
+      <workItem from="1458669371695" duration="25316000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25316000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0804904" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.5579632" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="549" y="80" width="1233" height="554" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33152762" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1476">
+          <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="82" column="63" selection-start-line="82" selection-start-column="63" selection-end-line="82" selection-end-column="63" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="14" column="51" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/agents/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="e#518#1259#0" expanded="false" />
+            <element signature="e#679#715#0" expanded="false" />
+            <element signature="e#943#1021#0" expanded="false" />
+            <element signature="e#1297#1473#0" expanded="false" />
+            <element signature="e#1853#1900#0" expanded="false" />
+            <element signature="e#1964#2343#0" expanded="false" />
+            <element signature="e#2292#2339#0" expanded="false" />
+            <element signature="e#2404#2650#0" expanded="false" />
+            <element signature="e#2599#2646#0" expanded="false" />
+            <element signature="e#3708#4017#0" expanded="false" />
+            <element signature="e#3982#4013#0" expanded="false" />
+            <element signature="e#4061#4352#0" expanded="false" />
+            <element signature="e#4317#4348#0" expanded="false" />
+            <element signature="e#4385#4444#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="115" column="231" selection-start-line="115" selection-start-column="231" selection-end-line="115" selection-end-column="231" />
+          <folding>
+            <element signature="e#826#1246#0" expanded="false" />
+            <element signature="e#868#1038#0" expanded="false" />
+            <element signature="e#902#1020#0" expanded="false" />
+            <element signature="e#1044#1201#0" expanded="false" />
+            <element signature="e#1078#1183#0" expanded="false" />
+            <element signature="e#1455#1593#0" expanded="false" />
+            <element signature="e#1481#1556#0" expanded="false" />
+            <element signature="e#2353#2446#0" expanded="false" />
+            <element signature="e#2504#2613#0" expanded="false" />
+            <element signature="e#3877#4191#0" expanded="false" />
+            <element signature="e#3904#4014#0" expanded="false" />
+            <element signature="e#4020#4146#0" expanded="false" />
+            <element signature="e#4882#5040#0" expanded="false" />
+            <element signature="e#5065#5121#0" expanded="false" />
+            <element signature="n#!!block;n#postAction#0;n#Chat#0" expanded="false" />
+            <element signature="e#6077#7131#0" expanded="false" />
+            <element signature="e#6277#7120#0" expanded="false" />
+            <element signature="e#6305#7044#0" expanded="false" />
+            <element signature="e#6489#7025#0" expanded="false" />
+            <element signature="e#6539#6751#0" expanded="false" />
+            <element signature="e#6585#6725#0" expanded="false" />
+            <element signature="e#6757#6963#0" expanded="false" />
+            <element signature="e#6803#6937#0" expanded="false" />
+            <element signature="e#7050#7106#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
