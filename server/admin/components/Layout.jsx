@@ -7,7 +7,9 @@ import RaisedButton from 'material-ui/lib/raised-button';
 
 export default class Layout extends React.Component {
     componentWillMount() {
-        this.props.state.login.data     =   JSON.parse(localStorage.getItem('Login'))
+        if(localStorage.getItem('Login') != 'undefined') {
+            this.props.state.login.body = JSON.parse(localStorage.getItem('Login'))
+        }
     }
 
     logout() {
@@ -20,9 +22,9 @@ export default class Layout extends React.Component {
         return (
             <div>
                 <RaisedButton  label="Home" />
-                {this.props.state.login.data && this.props.state.login.data.code === 200 ? <RaisedButton  onClick={this.logout.bind(this)} label="Logout" /> : <Link to="login" ><RaisedButton  label="login" /></Link>}
-                {this.props.state.login.data && this.props.state.login.data.code === 200 ? <Link to="chat" ><RaisedButton  label="Chat" /></Link> : ''}
-                {this.props.state.login.data && this.props.state.login.data.code === 200 ? <FlatButton label={this.props.state.login.data.agent[0].name} disabled={true} />  : ''}
+                {this.props.state.login.body && this.props.state.login.body.code === 200 ? <RaisedButton  onClick={this.logout.bind(this)} label="Logout" /> : <Link to="login" ><RaisedButton  label="login" /></Link>}
+                {this.props.state.login.body && this.props.state.login.body.code === 200 ? <Link to="chat" ><RaisedButton  label="Chat" /></Link> : ''}
+                {this.props.state.login.body && this.props.state.login.body.code === 200 ? <FlatButton label={this.props.state.login.body.agent[0].name} disabled={true} />  : ''}
             </div>
         )
     }

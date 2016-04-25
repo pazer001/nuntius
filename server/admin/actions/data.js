@@ -8,7 +8,7 @@ export function login(data) {
                                 password: data.password,
                                 companyId: data.companyId
                             })
-                            .end();
+                            // .end();
 
     return {
         type: 'LOGIN_AGENT',
@@ -51,5 +51,12 @@ export function selectedBannerSessionHash(session_hash) {
     return {
         type: 'SELECTED_BANNER_SESSION_HASH',
         payload: session_hash
+    }
+}
+
+export function chatClick(sessionHash) {
+    return {
+        type: 'CHAT_CLICK',
+        payload: sessionHash
     }
 }

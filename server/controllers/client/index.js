@@ -1,21 +1,56 @@
 'use strict';
 var DB      =   require('../../DB');
 var mysql   =   require('mysql');
-// var client  =   require('redis').createClient();
+var redis  =   require('redis').createClient();
 var moment  =   require('moment');
 
 class Client {
-    keepSession(sessionHash) {
-        let datetime    =   moment.utc().format('YYYY-MM-DD HH:mm:ss.SSS');
-        // this.keepSessionRedis(sessionHash, datetime);
-        let query   =   `UPDATE nuntius.sessions SET sessions.last_activity = UTC_TIMESTAMP(3) WHERE sessions.hash = '${sessionHash}'`;
-        DB.Q(query);
+    keepSessionRedis(sessionHash, companyId, datetime) {
+        if(!sessionHash || !companyId || !datetime) return;
+        redis.get(`sessions:${companyId}`, (err, sessions) => {
+            sessions    =   JSON.parse(sessions)
+            for(var i in sessions) {
+                if(sessions[i].hash == sessionHash) {
+                    sessions[i].last_activity   =   datetime;
+                    break;
+                }
+            }
+            redis.set(`sessions:${companyId}`, JSON.stringify(sessions))
+        })
     }
 
-    chatAndBannerLastMessages(sessionId, lastTimestamp, sessionHash, lastBannerView) {
+    keepSession(sessionHash, companyId) {
+        let datetime    =   moment.utc().format('YYYY-MM-DD HH:mm:ss.SSS');
+        let query   =   `UPDATE nuntius.sessions SET sessions.last_activity = '${datetime}' WHERE sessions.hash = '${sessionHash}'`;
+        DB.Q(query);
+        this.keepSessionRedis(sessionHash, companyId, datetime)
+    }
+
+    getLatestMessagesForSessionHash(lastTimestamp, sessionHash, companyId) {
+        return new Promise((resolve) => {
+            redis.get(`messages:${companyId}`, (err, sessions) => {
+                sessions    =   JSON.parse(sessions);
+                if(!sessions || !sessions[sessionHash]) {resolve([]); return}
+                let sessionsIndex   =   0,
+                    sessionsLength  =   sessions[sessionHash].length,
+                    returnData      =   [];
+
+                for(sessionsIndex; sessionsIndex < sessionsLength; sessionsIndex++) {
+                    // console.log(sessions[sessionHash][sessionsIndex].datetime, moment.utc(lastTimestamp).format('YYYY-MM-DD HH:mm:ss'))
+                    if(moment(sessions[sessionHash][sessionsIndex].datetime).isAfter(moment.utc(lastTimestamp).format('YYYY-MM-DD HH:mm:ss'))) {
+                        returnData.push(sessions[sessionHash][sessionsIndex])
+                    }
+                }
+                // console.log(returnData)
+                resolve(returnData)
+            })
+        });
+
+    }
+
+    chatAndBannerLastMessages(lastTimestamp, sessionHash, lastBannerView, companyId) {
         let that    =   this;
         let data    =   {};
-
         let getMessagePromise  =   new Promise(function(resolve, reject) {
             if(!sessionHash) {
                 data    =   {
@@ -23,8 +58,29 @@ class Client {
                     text: 'No Token'
                 };
                 resolve(data);
+                return;
             }
-            that.keepSession(sessionHash);
+
+            let bannersController   =   require('../banners/index'),
+                returnData          =   {};
+            Promise
+                .all([
+                that.getLatestMessagesForSessionHash(lastTimestamp, sessionHash, companyId),
+                bannersController.getBannersActions(companyId, sessionHash)]
+                )
+                .then((data) => {
+                    console.log(data)
+                    returnData    =   {
+                        code: 200,
+                        dataChat: data[0],
+                        dataBanner: data[1]
+                    }
+                    resolve(returnData)
+                });
+
+
+
+            that.keepSession(sessionHash, companyId);
             lastTimestamp   =   mysql.escape(lastTimestamp);
             sessionHash     =   mysql.escape(sessionHash);
 
@@ -57,6 +113,46 @@ class Client {
             });
         });
         return getMessagePromise;
+    }
+
+    askForSessionRedis(sessionsHash, companyId, data) {
+        // if(!sessionHash || !companyId || !datetime) return;
+        redis.get(`sessions:${companyId}`, (err, sessions) => {
+            sessions    =   JSON.parse(sessions) || {};
+            sessions[sessionsHash]  =   data;
+            redis.set(`sessions:${companyId}`, JSON.stringify(sessions))
+        });
+    }
+
+    askForSession(requestIp, brand, userId, hash, countryCode) {
+        // this.keepSession(hash);
+        let that    =   this;
+        return new Promise(function (resolve) {
+            let query = `SELECT brands.id FROM nuntius.brands WHERE brands.id = ${brand} AND brands.ip = '${requestIp}'`;
+            DB.Q(query).then((data) => {
+                if (data) {
+                    let datetime    =   moment.utc().format('YYYY-MM-DD HH:mm:ss.SSS'),
+                        query = `INSERT INTO nuntius.sessions (sessions.brand_id, sessions.user_id, sessions.hash, sessions.country_code, sessions.datetime, sessions.state) VALUES(${brand}, '${userId}', '${hash}', '${countryCode}', '${datetime}', '1')`,
+                        result  =   {};
+                    return DB.Q(query).then(() => {
+                        query   =   `SELECT * FROM nuntius.sessions WHERE sessions.hash = '${hash}'`;
+                        DB.Q(query).then((data) => {
+                            result  =   {
+                                sessionHash: hash,
+                                companyId: data[0].company_id
+                            };
+                            that.askForSessionRedis(result.sessionHash, result.companyId, data[0]);
+                            resolve(result)
+                        })
+                    })
+
+
+
+                } else {
+                    resolve('false')
+                }
+            })
+        });
     }
 }
 

@@ -9,17 +9,17 @@ var DB          =   require('./DB');
 var mysql       =   require('mysql');
 var crypto      =   require('crypto');
 var compression =   require('compression');
-
+var useragent   =   require('useragent');
 
 
 var app         = express();
 
-
+app.use('/admin', express.static('admin'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Add headers
-app.use('/admin', express.static('admin'));
+
 app.use(compression({level: 9}));
 app.use(function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
@@ -35,22 +35,22 @@ app.use(function (req, res, next) {
 app.all('/chat/message/:sessionHash', function (req, res) {
     let sessionHash =   req.params.sessionHash,
         message     =   req.body.message || req.query.message,
-        source      =   req.body.source || req.query.source;
-
-    let controller  =   require('./controllers/chat/index');
-    controller.postMessage(sessionHash, message, source).then(function(data) {
+        source      =   req.body.source || req.query.source,
+        companyId   =   req.body.companyId || req.query.companyId,
+        controller  =   require('./controllers/chat/index');
+    controller.postMessage(sessionHash, message, source, companyId).then(function(data) {
         res.json(data);
     });
 });
 
-app.get('/client/chatAndBannerLastMessages/:sessionId', (req, res) => {
-    let sessionId       =   Number(req.params.sessionId),
-        lastTimestamp   =   req.query.lastTimestamp,
+app.get('/client/chatAndBannerLastMessages', (req, res) => {
+    let lastTimestamp   =   req.query.lastTimestamp,
         sessionHash     =   req.query.sessionHash,
-        lastBannerView  =   req.query.lastBannerView;
+        lastBannerView  =   req.query.lastBannerView,
+        companyId       =   req.query.companyId;
 
     let controller      =   require('./controllers/client/index');
-    controller.chatAndBannerLastMessages(sessionId, lastTimestamp, sessionHash, lastBannerView).then((data) => {
+    controller.chatAndBannerLastMessages(lastTimestamp, sessionHash, lastBannerView, companyId).then((data) => {
         res.jsonp(data);
     });
 })
@@ -92,7 +92,7 @@ app.get('/chat/askForSession/:brand', function (req, res) {
                             .replace('/', '')
                             .replace('+', '')
                             .replace('=', '');
-    let controller  =   require('./controllers/chat/index');
+    let controller  =   require('./controllers/client/index');
     controller.askForSession(requestIp, brand, userId, hash, countryCode).then(function(data) {
         res.send(data);
     });
@@ -108,12 +108,15 @@ app.post('/chat/deleteSession/', function (req, res) {
 });
 
 app.post('/action/:sessionHash', function (req, res) {
-    let sessionHash  =   req.params.sessionHash,
-        actionName  =   req.body.actionName,
-        extraData  =   req.body.extraData || '',
-        userId      =   Number(req.body.userId);
-    let controller  =   require('./controllers/chat/index');
-    controller.postAction(sessionHash, actionName, extraData, userId).then(function(data) {
+    let sessionHash =   req.params.sessionHash,
+        actionName  =   String(req.query.actionName),
+        browser     =   `${useragent.parse(req.headers['user-agent']).family} ${useragent.parse(req.headers['user-agent']).major}`,
+        userIp      =   String(req.connection.remoteAddress),
+        extraData   =   String(req.query.extraData),
+        companyId   =   Number(req.query.companyId),
+        amount      =   Number(req.query.amount);
+    let controller  =   require('./controllers/actions/index');
+    controller.postAction(sessionHash, actionName, extraData, amount, userIp, browser, companyId).then(function(data) {
         res.send(data);
     });
 });

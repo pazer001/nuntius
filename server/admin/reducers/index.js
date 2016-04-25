@@ -1,6 +1,6 @@
 import {combineReducers, createStore, applyMiddleware} from 'redux';
 import ReduxPromise from 'redux-promise';
-import {login, chat, chatClick, banners} from '../actions/actions'
+import {login, chat, chatClick, banners, sessions} from '../actions/actions'
 
 const createStoreWithMiddleware =   applyMiddleware(ReduxPromise)(createStore);
 
@@ -13,7 +13,8 @@ const rootReducer   =   createStoreWithMiddleware(combineReducers({
     },
     login: login,
     chat: chat,
-    banners: banners
+    banners: banners,
+    sessions: sessions
 }));
 
 export default rootReducer;

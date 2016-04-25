@@ -13,30 +13,34 @@ class Chat {
         DB.Q(query);
     }
 
-    postMessageRedis(sessionHash) {
-        let chatsQuery   =   `SELECT * FROM nuntius.chats WHERE chats.session_hash = '${sessionHash}'`,
-            companyId;
-        DB.Q(chatsQuery).then((chats) => {
-            companyId   =   chats[0].company_id;
-            let chatsRedis  =   {};
-            chatsRedis[sessionHash]  =   chats[0];
-            return redis.set(`chats:${companyId}`, JSON.stringify(chatsRedis));
-        }).then(() => {
-            let messagesQuery = `SELECT * FROM nuntius.messages WHERE messages.session_hash = '${sessionHash}'`;
-            DB.Q(messagesQuery).then((messages) => {
-                let messagesRedis  =   {};
-                for(let i = 0; i < messages.length; i++) {
-                    if(!messagesRedis[messages[i].session_hash]) messagesRedis[messages[i].session_hash] = [];
-                    messagesRedis[messages[i].session_hash].push(messages[i])
-                }
-                redis.set(`messages:${companyId}`, JSON.stringify(messagesRedis))
-            })
-        })
+    postMessageRedis(companyId) {
+        let query   =   `SELECT
+                            messages.source,
+                            messages.message,
+                            messages.agent_id,
+                            messages.user_id,
+                            messages.datetime,
+                            messages.session_hash
+                        FROM
+                            nuntius.messages
+                        JOIN nuntius.sessions ON sessions.hash = messages.session_hash
+                        AND sessions.state = '1'
+                        AND sessions.company_id = '${companyId}'`;
 
-
+        DB.Q(query).then((messages) => {
+            let messagesLength  =   messages.length,
+                messagesIndex   =   0,
+                redisData       =   {};
+            for(messagesIndex; messagesIndex < messagesLength; messagesIndex++) {
+                if(!redisData[messages[messagesIndex].session_hash]) redisData[messages[messagesIndex].session_hash]    =   [];
+                messages[messagesIndex].datetime    =   moment(messages[messagesIndex].datetime).format('YYYY-MM-DD HH:mm:ss');
+                redisData[messages[messagesIndex].session_hash].push(messages[messagesIndex])
+            }
+            redis.set(`messages:${companyId}`, JSON.stringify(redisData));
+        });
     }
 
-    postMessage(sessionHash, message, source) {
+    postMessage(sessionHash, message, source, companyId) {
         let that    =   this;
         return new Promise(function(resolve) {
             let datetime    =   moment.utc().format('YYYY-MM-DD HH:mm:ss.SSS'),
@@ -44,9 +48,10 @@ class Chat {
             query           =   `INSERT INTO nuntius.messages
                                 (session_hash, source, message, datetime)
                                 VALUES(${mysql.escape(sessionHash)}, ${mysql.escape(source)}, ${mysql.escape(message)}, '${datetime}')`;
+
             return DB.Q(query).then((data) => {
                 if(DB.lastInsertedId()) {
-                    that.postMessageRedis(sessionHash);
+                    that.postMessageRedis(companyId);
                     responseData    =   {
                         code: 200,
                         text: 'Message added successfully.'
@@ -184,10 +189,13 @@ class Chat {
     }
     
     getData(companyId, chatHashes) {
-        let that    =   this, i = 0, responseData = {};
-        const paz= new Promise((resolve) => {
+        let that    =   this,
+            i = 0,
+            responseData = {},
+            actionsController      =   require('../actions/index');
+        return new Promise((resolve) => {
             Promise
-                .all([that.getChats(companyId), that.getSessions(companyId), that.getMessages(companyId, chatHashes)])
+                .all([that.getChats(companyId), that.getSessions(companyId), that.getMessages(companyId, chatHashes), actionsController.getActions(companyId)])
                 .then((data) => {
                     for(i; i < data.length; i++) {
                         responseData[data[i].dataName]  =   data[i];
@@ -195,41 +203,6 @@ class Chat {
                     resolve(responseData)
                 })
         })
-        return paz;
-    }
-
-    askForSessionRedis(hash) {
-        let query   =   `SELECT * FROM nuntius.sessions WHERE sessions.hash = '${hash}'`;
-        DB.Q(query).then((data) => {
-            let companyId   =   data[0].company_id;
-            redis.get(`sessions:${companyId}`, (err, sessions) => {
-                sessions    =   JSON.parse(sessions) || {};
-                sessions[data[0].hash]  =   data[0];
-                redis.set(`sessions:${companyId}`, JSON.stringify(sessions))
-            })
-        })
-    }
-
-    askForSession(requestIp, brand, userId, hash, countryCode) {
-        this.keepSession(hash);
-        let that    =   this;
-        return new Promise(function (resolve) {
-            let query = `SELECT brands.id FROM nuntius.brands WHERE brands.id = ${brand} AND brands.ip = '${requestIp}'`;
-            DB.Q(query).then((data) => {
-                if (data) {
-                    let datetime    =   moment.utc().format('YYYY-MM-DD HH:mm:ss.SSS'),
-                        query = `INSERT INTO nuntius.sessions (sessions.brand_id, sessions.user_id, sessions.hash, sessions.country_code, sessions.datetime, sessions.state) VALUES(${brand}, '${userId}', '${hash}', '${countryCode}', '${datetime}', '1')`,
-                        result  =   {};
-                    DB.Q(query).then((data) => {
-                        result    =   {sessionId: DB.lastInsertedId(), sessionHash: hash};
-                        that.askForSessionRedis(hash);
-                        resolve(result)
-                    })
-                } else {
-                    resolve('false')
-                }
-            })
-        });
     }
 
     deleteSessionRedis(hash) {

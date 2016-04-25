@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="2bb86e1b-e2ee-4187-936a-fa9bbb5807e9" name="Ubuntu Server - Nuntius" url="http://192.168.0.102">
-        <fileTransfer host="192.168.0.102" port="22" rootFolder="/var/www/nuntius" accessType="SFTP" username="pazer">
+        <fileTransfer host="192.168.0.102" port="22" privateKey="E:\paz.private-ssh.ppk" rootFolder="/var/www/nuntius" accessType="SFTP" username="root" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

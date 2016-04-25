@@ -3,6 +3,9 @@ import {connect} from 'react-redux';
 import Loader from './Loader.jsx';
 import {login} from '../actions/data';
 import {bindActionCreators} from 'redux';
+import TextField from 'material-ui/lib/text-field';
+import RaisedButton from 'material-ui/lib/raised-button';
+
 
 class Login extends React.Component {
     constructor() {
@@ -23,7 +26,7 @@ class Login extends React.Component {
     renderBrands() {
         this.data.login.companyId   =   this.props.state.brands[0].id;
         return this.props.state.brands.map((brand) => {
-            return (<option value={brand.id} key={brand.id}>{brand.name}</option>)
+            return (<option  value={brand.id} key={brand.id}>{brand.name}</option>)
         });
     }
 
@@ -39,25 +42,18 @@ class Login extends React.Component {
                 <div className="row">
                     <form className="col s12">
                         <div className="row">
-                            <div className="input-field col s12">
-                                <input onChange={(event) => this.data.login.email = event.target.value} type="email" placeholder="Email" />
-                            </div>
+                            <TextField hintText="Email" onChange={(event) => this.data.login.email = event.target.value} fullWidth={true} />
                         </div>
                         <div className="row">
-                            <div className="input-field col s12">
-                                <input onChange={(event) => this.data.login.password = event.target.value} type="password" placeholder="Password" />
-                            </div>
+                            <TextField hintText="Password" type="password" onChange={(event) => this.data.login.password = event.target.value} fullWidth={true} />
                         </div>
                         <div className="row">
-                            <label>Company</label>
-                            <select onChange={(event) => this.data.login.companyId = event.target.value} className="form-control form-control-lg">
+                            <select onChange={(event) => this.data.login.companyId = event.target.value} fullWidth={true} className="form-control form-control-lg" >
                                 {this.renderBrands()}
                             </select>
                         </div>
                         <div className="row">
-                            <div className="col-md-1">
-                                <a onClick={this.login.bind(this)} className="waves-effect waves-light btn">Login</a>
-                            </div>
+                            <div><RaisedButton onClick={() => {this.login()}} primary={true} label="login" /></div>
                             <div className="col-md-3">
                                 {this.state.loader === true && !this.props.state.login.data ? <Loader /> : (this.props.state.login.data && this.props.state.login.data.code === 400) ? <div className="chip"> Wrong Username/Password/Company.</div> : ''}
                             </div>

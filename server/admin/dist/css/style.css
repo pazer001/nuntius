@@ -145,3 +145,12 @@
 .chat-box-wrapper {
     width: 20%;
 }
+
+.modal {
+    top: 3em
+}
+
+.modal-dialog {
+    width: 50%!important;
+    text-align: center;
+}

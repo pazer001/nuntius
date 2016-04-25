@@ -1,10 +1,8 @@
-import ajax from 'superagent'
-
 export function login(state = {}, action) {
     switch (action.type) {
         case 'LOGIN_AGENT':
-            if(action.payload.data.code === 200) {
-                localStorage.setItem('Login', JSON.stringify(action.payload.data));
+            if(action.payload.body && action.payload.body.code && action.payload.body.code === 200) {
+                localStorage.setItem('Login', JSON.stringify(action.payload.body));
                 location.href   =   '#/'
             }
 
@@ -21,6 +19,21 @@ export function chat(state = {}, action) {
     return state;
 }
 
+export function sessions(state = {}, action) {
+    switch (action.type) {
+        case 'CHAT_CLICK':
+            let data    =   Object.assign({}, state);
+            if(data.chatHashesChoosed[action.payload]) {
+                delete data.chatHashesChoosed[action.payload]
+            } else {
+                data.chatHashesChoosed[action.payload] =    true
+            }
+            return data;
+    }
+    if(!state.chatHashesChoosed) state.chatHashesChoosed = {};
+    return state;
+}
+
 export function banners(state = {}, action) {
     switch (action.type) {
         case 'GET_BANNERS':
@@ -29,7 +42,7 @@ export function banners(state = {}, action) {
             for(let i in action.payload.body.data) {
                 newDate[action.payload.body.data[i].id] =   action.payload.body.data[i];
             }
-            action.payload.body.data    =   newDate
+            action.payload.body.data    =   newDate;
             data.bannersData            =   action.payload;
             return data;
     }
