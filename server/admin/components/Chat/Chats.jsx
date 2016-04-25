@@ -55,7 +55,7 @@ class Chats extends React.Component {
             that = this,
             timeDifference = new Date().getTimezoneOffset(),
             primaryText,
-            userId,
+            user,
             messageSession;
         var chatContainer   =   [];
         if(data && data.messages.data) {
