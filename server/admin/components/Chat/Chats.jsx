@@ -67,7 +67,7 @@ class Chats extends React.Component {
                 user    =   data.sessions.data[sessionKeys[sessionKeysIndex]].user_id || 'Guest';
                 messageSession  =   `messages_${sessionKeys[sessionKeysIndex]}`;
                 chatContainer.push( (
-                        <Card key={sessionKeys[sessionKeysIndex]} className="col-sm-2">
+                        <Card key={user} className="col-sm-2">
                             <div className="label label-default">User ID: {user}</div>
                                 <ul ref={messageSession} className="messages-wrapper list-group">
                                     {chat.map(message => {
