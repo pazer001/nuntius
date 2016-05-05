@@ -1,34 +1,50 @@
 'use strict';
 var redis   =   require('redis').createClient();
 var moment  =   require('moment');
+var tools   =   require('../../tools_functions');
+const DB    =   require('../DB');
 
 module.exports = function() {
-    console.time('chats');
-    redis.keys('chats:*', (err, chatsCompaniesKeys) => {
-        let chatsCompaniesItem                  =   0,
-            chatsCompaniesLength                =   chatsCompaniesKeys.length,
-            chatsCompanyDataParsed              =   {},
-            chatsCompaniesItemIndex,
-            companyId,
-            chatsCompanyDataParsedIndex         =   0,
-            chatsCompanyDataParsedKeys          =   {},
-            chatsCompanyDataParsedKeysLength    =   0;
-        for(chatsCompaniesItem; chatsCompaniesItem < chatsCompaniesLength; chatsCompaniesItem++) {
-            companyId   =   chatsCompaniesKeys[chatsCompaniesItem].split(':')[1];
-            chatsCompaniesItemIndex   =   chatsCompaniesItem;
-            redis.get(chatsCompaniesKeys[chatsCompaniesItem], (err, chatsCompanyData) => {
-                chatsCompanyDataParsed  =   JSON.parse(chatsCompanyData);
-                    chatsCompanyDataParsedKeys          =   Object.keys(chatsCompanyDataParsed),
-                    chatsCompanyDataParsedKeysLength    =   chatsCompanyDataParsedKeys.length;
-                for(chatsCompanyDataParsedIndex; chatsCompanyDataParsedIndex < chatsCompanyDataParsedKeysLength; chatsCompanyDataParsedIndex++) {
-                    if(moment(chatsCompanyDataParsed[chatsCompanyDataParsedKeys[chatsCompanyDataParsedIndex]].last_message).isBefore(moment.utc().subtract(20, 'minutes').format('YYYY-MM-DD HH:mm:ss'))) {
-                        delete chatsCompanyDataParsed[chatsCompanyDataParsedKeys[chatsCompanyDataParsedIndex]];
-                    }
-                };
-                redis.set(chatsCompaniesKeys[chatsCompaniesItemIndex], JSON.stringify(chatsCompanyDataParsed));
-                console.log(moment().format('YYYY-MM-DD HH:mm:ss'))
-                console.timeEnd('chats')
-            })
-        }
+    console.time('Chats');
+    let queryCompanies  =   `SELECT companies.id FROM nuntius.companies`,
+        companiesIdsObject  =   {};
+    DB.Q(queryCompanies).then((companiesIds) => {
+        companiesIdsObject  =   tools.arrayValueToKey(companiesIds, 'id');
+        let chatsQuery    =   `SELECT
+                                    chats.last_message,
+                                    chats.brand_id,
+                                    chats.company_id,
+                                    chats.session_hash,
+                                    chats.user_messages,
+                                    chats.agent_messages,
+                                    chats.country_code,
+                                    chats.user_id,
+                                    chats.datetime
+                                FROM
+                                    nuntius.chats
+                                JOIN nuntius.sessions ON chats.session_hash = sessions.hash AND sessions.state = '1'`;
+        DB.Q(chatsQuery).then((chats) => {
+            let chatsLength   =   chats.length,
+                chatsIndex    =   0,
+                chatsData     =   {},
+                companiesIdsObjectLength    =   companiesIdsObject.length,
+                companiesIdsObjectIndex     =   0;
+
+            for(chatsIndex; chatsIndex < chatsLength; chatsIndex++) {
+                if(!chatsData[chats[chatsIndex].company_id]) chatsData[chats[chatsIndex].company_id]  =   {};
+                if(!chatsData[chats[chatsIndex].company_id][chats[chatsIndex].session_hash]) chatsData[chats[chatsIndex].company_id][chats[chatsIndex].session_hash]    =   {};
+                chatsData[chats[chatsIndex].company_id][chats[chatsIndex].session_hash] =   chats[chatsIndex];
+            }
+            
+            for(companiesIdsObjectIndex; companiesIdsObjectIndex < companiesIdsObjectLength; companiesIdsObjectIndex++) {
+
+                if(chatsData[companiesIdsObject[companiesIdsObjectIndex]]) {
+                    redis.set(`chats:${companiesIdsObject[companiesIdsObjectIndex]}`, JSON.stringify(chatsData[companiesIdsObject[companiesIdsObjectIndex]]))
+                } else {
+                    redis.del(`chats:${companiesIdsObject[companiesIdsObjectIndex]}`);
+                }
+            }
+            console.timeEnd('Chats')
+        })
     })
 };

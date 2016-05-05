@@ -15,6 +15,7 @@ import Default from './components/Default.jsx';
 import Login from './components/Login.jsx';
 import IndexChat from './components/Chat/IndexChat.jsx';
 
+injectTapEventPlugin();
 const darkMuiTheme = getMuiTheme(darkBaseTheme);
 
 ReactDOM.render((

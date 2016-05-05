@@ -5,7 +5,7 @@ var moment  =   require('moment');
 var tools   =   require('../../tools_functions');
 
 module.exports = function() {
-    console.time('Sessions')
+    console.time('Sessions');
     let queryCompanies  =   `SELECT companies.id FROM nuntius.companies`,
         companiesIdsObject  =   {};
     DB.Q(queryCompanies).then((companiesIds) => {
@@ -24,25 +24,28 @@ module.exports = function() {
                                     sessions.state = '1'`;
 
         DB.Q(sessionsQuery).then((sessions) => {
-            let sessionsLength   =   sessions.length,
-                sessionsIndex    =   0,
-                sessionsData     =   {},
+            let sessionsLength              =   sessions.length,
+                sessionsIndex               =   0,
+                sessionsData                =   {},
                 companiesIdsObjectLength    =   companiesIdsObject.length,
-                companiesIdsObjectIndex     =   0;
+                companiesIdsObjectIndex     =   0,
+                companiesWithData           =   {};
 
             for(sessionsIndex; sessionsIndex < sessionsLength; sessionsIndex++) {
-                if(!sessionsData[sessions[sessionsIndex].company_id]) sessionsData[sessions[sessionsIndex].company_id]  =   [];
-                sessionsData[sessions[sessionsIndex].company_id].push(sessions[sessionsIndex]);
+                if(!sessionsData[sessions[sessionsIndex].hash]) sessionsData[sessions[sessionsIndex].hash]  =   [];
+                sessions[sessionsIndex].last_activity                   =   moment(sessions[sessionsIndex].last_activity).format('YYYY-MM-DD HH:mm:ss.SSS');
+                sessions[sessionsIndex].datetime                        =   moment(sessions[sessionsIndex].datetime).format('YYYY-MM-DD HH:mm:ss.SSS');
+                sessionsData[sessions[sessionsIndex].hash]              =   sessions[sessionsIndex];
+                companiesWithData[sessions[sessionsIndex].company_id]   =   true;
             }
 
             for(companiesIdsObjectIndex; companiesIdsObjectIndex < companiesIdsObjectLength; companiesIdsObjectIndex++) {
-                if(sessionsData[companiesIdsObject[companiesIdsObjectIndex]]) {
-                    redis.set(`sessions:${companiesIdsObject[companiesIdsObjectIndex]}`, JSON.stringify(sessionsData[companiesIdsObject[companiesIdsObjectIndex]]))
+                if(companiesWithData[companiesIdsObject[companiesIdsObjectIndex]]) {
+                    redis.set(`sessions:${companiesIdsObject[companiesIdsObjectIndex]}`, JSON.stringify(sessionsData))
                 } else {
                     redis.del(`sessions:${companiesIdsObject[companiesIdsObjectIndex]}`);
                 }
             }
-            console.log('Sessions Cron');
             console.timeEnd('Sessions')
         })
     })

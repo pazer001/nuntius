@@ -23,7 +23,7 @@ class DB {
                 connection.end();
                 if (err || !rows) {
                     console.log(query);
-                    reject({});
+                    resolve({});
                     return;
                 }
 

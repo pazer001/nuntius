@@ -19,7 +19,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Add headers
-
 app.use(compression({level: 9}));
 app.use(function (req, res, next) {
     res.setHeader('Content-Type', 'application/json');
@@ -31,6 +30,15 @@ app.use(function (req, res, next) {
     res.setHeader("Cache-Control", "no-cache");
     next();
 });
+
+app.get('/system/brands', (req, res) => {
+    let companyId   =   req.query.companyId;
+
+    let controller      =   require('./controllers/system/index');
+    controller.getBrands(companyId).then((data) => {
+        res.jsonp(data);
+    });
+})
 
 app.all('/chat/message/:sessionHash', function (req, res) {
     let sessionHash =   req.params.sessionHash,
@@ -150,6 +158,28 @@ app.post('/banners/sendBanner/', function (req, res) {
         .catch((data) => {
             res.send(data);
         })
+});
+
+app.post('/agents/add', function (req, res) {
+    let companyId       =   req.body.companyId,
+        agentName       =   req.body.agentName,
+        agentRealName   =   req.body.agentRealName,
+        agentEmail      =   req.body.agentEmail,
+        agentPassword   =   req.body.agentPassword,
+        agentLevel      =   req.body.agentLevel,
+        deskName        =   req.body.deskName;
+    let controller  =   require('./controllers/agents/index');
+    controller.addAgent(companyId, agentName, agentRealName, agentEmail, agentPassword, agentLevel, deskName).then((data) => {
+        res.send(data);
+    });
+});
+
+app.get('/chat/getChatStatistics', function (req, res) {
+    let companyId       =   req.query.companyId;
+    let controller  =   require('./controllers/chat/index');
+    controller.getChatStatistics(companyId).then((data) => {
+        res.send(data);
+    });
 });
 
 var listener    =   app.listen(appConfig.port, function () {

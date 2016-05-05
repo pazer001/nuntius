@@ -8,7 +8,6 @@ import appConfig from '../../config'
 import RaisedButton from 'material-ui/lib/raised-button';
 import Success from 'material-ui/lib/svg-icons/action/thumb-up';
 import Failed from 'material-ui/lib/svg-icons/action/thumb-down';
-import Dialog from 'material-ui/lib/dialog';
 import { Modal } from 'react-bootstrap';
 
 class Banners extends React.Component {

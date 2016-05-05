@@ -14,8 +14,9 @@ import ChatButton from 'material-ui/lib/svg-icons/communication/chat';
 import BannerButton from 'material-ui/lib/svg-icons/av/web';
 import Card from 'material-ui/lib/card/card';
 import CardHeader from 'material-ui/lib/card/card-header';
-import TextField from 'material-ui/lib/text-field';
-import RaisedButton from 'material-ui/lib/raised-button';
+import CardText from 'material-ui/lib/card/card-text';
+import Avatar from 'material-ui/lib/avatar';
+import FaceIcon from 'material-ui/lib/svg-icons/action/face';
 
 class Actions extends React.Component {
     chatClick(sessionHash) {
@@ -29,15 +30,15 @@ class Actions extends React.Component {
     }
 
     renderActions() {
-        let actions    =   this.props.state.chat.body.actions.data;
+        let actions     =   this.props.state.chat.body.actions.data,
+            actionKey   =   0;
+        if(!actions.length) return (<div></div>);
         return (
-            <Card>
-                <CardHeader title="Actions" />
-                <Table>
+                <Table className="actions-table" fixedHeader={true}>
                     <TableHeader displaySelectAll={false}>
                         <TableRow>
-                            <TableHeaderColumn></TableHeaderColumn>
                             <TableHeaderColumn>Action</TableHeaderColumn>
+                            <TableHeaderColumn>Action Name</TableHeaderColumn>
                             <TableHeaderColumn>Amount</TableHeaderColumn>
                             <TableHeaderColumn>Extra</TableHeaderColumn>
                             <TableHeaderColumn>User</TableHeaderColumn>
@@ -49,16 +50,16 @@ class Actions extends React.Component {
                     <TableBody displayRowCheckbox={false} adjustForCheckbox={false} stripedRows={true} showRowHover={false} preScanRows={false}>
                         {actions.map((action) => {
                             return (
-                                <TableRow selectable={false} key={action.id}>
+                                <TableRow selectable={false} key={actionKey++}>
                                     <TableRowColumn>
-                                        <ChatButton onClick={() => {this.chatClick(action.session_hash)}} />
-                                        <BannerButton onClick={() => {this.bannerClick(action.session_hash)}} />
+                                        <ChatButton className="pointer" onClick={() => {this.chatClick(action.session_hash)}} />
+                                        <BannerButton className="pointer" onClick={() => {this.bannerClick(action.session_hash)}} />
                                     </TableRowColumn>
                                     <TableRowColumn>{action.action_name}</TableRowColumn>
                                     <TableRowColumn>{action.amount}</TableRowColumn>
                                     <TableRowColumn>{action.extra_data}</TableRowColumn>
                                     <TableRowColumn>{action.user_id || 'Guest'}</TableRowColumn>
-                                    <TableRowColumn>{action.brand_id}</TableRowColumn>
+                                    <TableRowColumn>{this.props.state.brands.body ? <Avatar src={this.props.state.brands.body[action.brand_id].image_url} /> : <FaceIcon />}</TableRowColumn>
                                     <TableRowColumn>{moment(action.timestamp).format('YYYY-MM-DD HH:mm:ss')}</TableRowColumn>
                                     <TableRowColumn>{action.user_ip}</TableRowColumn>
                                 </TableRow>
@@ -66,8 +67,6 @@ class Actions extends React.Component {
                         })}
                     </TableBody>
                 </Table>
-                
-            </Card>
         )
     }
 
@@ -77,7 +76,14 @@ class Actions extends React.Component {
 
     render() {
         if(!this.props.state.chat.body) return (<div></div>);
-        return (this.renderActions())
+        return (
+            <Card initiallyExpanded={true}>
+                <CardHeader title="Actions" showExpandableButton={true} actAsExpander={true} />+
+                <CardText expandable={true}>
+                    {this.renderActions()}
+                </CardText>
+            </Card>
+        )
     }
 }
 

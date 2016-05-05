@@ -5,18 +5,12 @@ import {getChats, chatClick, showBanners, hideBanners, selectedBannerSessionHash
 import moment from 'moment';
 import _ from 'lodash';
 import Card from 'material-ui/lib/card/card';
-import CardText from 'material-ui/lib/card/card-text';
-import Table from 'material-ui/lib/table/table';
-import TableHeaderColumn from 'material-ui/lib/table/table-header-column';
-import TableRow from 'material-ui/lib/table/table-row';
-import TableHeader from 'material-ui/lib/table/table-header';
-import TableRowColumn from 'material-ui/lib/table/table-row-column';
-import TableBody from 'material-ui/lib/table/table-body';
 import {green900, green50, deepPurple900, deepPurple50, teal900, teal50, deepOrange900, deepOrange50} from 'material-ui/lib/styles/colors'
-import IconButton from 'material-ui/lib/icon-button';
-import ChatButton from 'material-ui/lib/svg-icons/communication/chat';
-import BannerButton from 'material-ui/lib/svg-icons/av/web';
+import CardText from 'material-ui/lib/card/card-text';
+import FaceIcon from 'material-ui/lib/svg-icons/action/face';
+import CardActions from 'material-ui/lib/card/card-actions';
 import CardHeader from 'material-ui/lib/card/card-header';
+import RaisedButton from 'material-ui/lib/raised-button';
 
 export default class Sessions extends React.Component {
     constructor() {
@@ -31,11 +25,10 @@ export default class Sessions extends React.Component {
             chatHashesChoosed: [],
             firstChatMessage: [],
             showFirstChatMessageDialog: [],
-            messageInChat: []
+            messageInChat: [],
+            expanded: true
         }
     }
-
-
 
     componentDidMount() {
         if(!this.props.state.login.body) return;
@@ -68,9 +61,8 @@ export default class Sessions extends React.Component {
     }
 
     designSessions() {
-        let data    =   this.props.state.chat.body;
-        if(!data) return;
-        let timeDifference,
+        let data    =   this.props.state.chat.body,
+            timeDifference,
             boxStyle,
             lastHeading,
             utcDifference = moment().utcOffset(),
@@ -82,76 +74,68 @@ export default class Sessions extends React.Component {
 
         this.intervals.activeChatColor  =   this.intervals.activeChatColor == 'green' ? 'blue' : 'green';
         return sessions =   _.values(data.sessions.data).map((session) => {
-            if(data.chats.data[session.hash] && data.chats.data[session.hash]) {
+            if(data.chats.data[session.hash]) {
                 userMessages    =   data.chats.data[session.hash].user_messages;
                 agentMessages   =   data.chats.data[session.hash].agent_messages;
+            } else {
+                userMessages    =   0;
+                agentMessages   =   0;
             }
 
             if(data.chats.data[session.hash] && (userMessages && !agentMessages)) {
                 boxStyle    =   {
-                    'backgroundColor': teal900,
+                    'boxShadow': `0px 0px .5em ${teal900}`,
                     'color': teal50
                 };
                 lastHeading     =   'Last Message';
                 that.state.messageInChat[session.hash]   =   true
             } else if(data.chats.data[session.hash] && (userMessages && agentMessages)) {
+                console.log('here')
                 boxStyle = {
-                    'backgroundColor': deepPurple900,
+                    'boxShadow': `0px 0px .5em ${deepPurple900}`,
                     'color': deepPurple50
                 };
                 lastHeading = 'Last Message';
                 that.state.messageInChat[session.hash] = true;
             } else if(data.chats.data[session.hash] && (!userMessages && agentMessages)) {
                 boxStyle    =      {
-                    'backgroundColor': green900,
+                    'boxShadow': `0px 0px .5em ${green900}`,
                     'color': green50
                 };
                 lastHeading     =   'Last Message';
             } else {
                 boxStyle    =      {
-                    'backgroundColor': deepOrange900,
+                    'boxShadow': `0px 0px .5em ${deepOrange900}`,
                     'color': deepOrange50
                 };
                 lastHeading     =   'On Site';
             }
             timeDifference  =   moment(session.datetime).subtract(-utcDifference, 'minutes').fromNow(true);
             return (
-                <Card key={session.id} className="chat-box">
-                    <CardText >
-                        <Table selectable={false} style={boxStyle}>
-                        <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
-                        <TableRow selectable={false}>
-                            <TableHeaderColumn color={boxStyle.color}>User</TableHeaderColumn>
-                            <TableHeaderColumn color={boxStyle.color}>{lastHeading}</TableHeaderColumn>
-                            <TableHeaderColumn color={boxStyle.color}>Action</TableHeaderColumn>
-                        </TableRow>
-                        </TableHeader>
-                        <TableBody displayRowCheckbox={false} adjustForCheckbox={false} >
-                        <TableRow selectable={false} color={boxStyle.color}>
-                            <TableRowColumn>{session.user_id || 'Guest'}</TableRowColumn>
-                            <TableRowColumn>{timeDifference}</TableRowColumn>
-                            <TableRowColumn>
-                                <IconButton tooltip="Open Chat" onClick={() => {this.chatClick(session.hash)}}>
-                                    <ChatButton color={boxStyle.color} />
-                                </IconButton>
-                                <IconButton tooltip="Open Banner" onClick={this.chatClick.bind(this, session)} onClick={() => {this.bannerClick(session.hash)}}>
-                                    <BannerButton color={boxStyle.color} />
-                                </IconButton>
-                            </TableRowColumn>
-                        </TableRow>
-                        </TableBody>
-                    </Table>
-                    </CardText>
+                <Card key={session.hash} className="session-box col-xs-12 col-sm-6 col-md-4 col-lg-2 col-xl-1" style={boxStyle}>
+                        <CardHeader
+                            title={session.user_id || 'Guest'}
+                            subtitle={timeDifference}
+                            avatar={this.props.state.brands.body ? this.props.state.brands.body[session.brand_id].image_url : <FaceIcon />}
+                        />
+                    <CardActions>
+                        <RaisedButton label="Chat" onClick={() => {this.chatClick(session.hash)}} />
+                        <RaisedButton label="Banner" onClick={this.chatClick.bind(this, session)} onClick={() => {this.bannerClick(session.hash)}} />
+                    </CardActions>
+
                 </Card>
             );
         });
     }
 
     render() {
+        if(!this.props.state.chat.body) return (<div></div>)
         return (
-            <Card>
-                <CardHeader title="Sessions" />
-                {this.designSessions()}
+            <Card initiallyExpanded={true}  >
+                <CardHeader title="Sessions" showExpandableButton={true} actAsExpander={true} />
+                <CardText expandable={true}>
+                    {this.designSessions()}
+                </CardText>
             </Card>
         )
     }

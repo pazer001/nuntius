@@ -2,9 +2,174 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad014d8f-09e0-4128-a21c-a8a80b6863af" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/activate.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/admin/HighChartsTheme.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/admin/components/Chat/AddAgentDialog.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/admin/components/Chat/Settings.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/admin/components/Chat/Statistics.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/system/index.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/contrib/cursor/__tests__/Cursor.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/OrderedMap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOM.native.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactPropTransferer.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client" afterPath="$PROJECT_DIR$/client" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/buschat-bundle.js" afterPath="$PROJECT_DIR$/client/buschat-bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/buschat-script.js" afterPath="$PROJECT_DIR$/client/buschat-script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/DB.js" afterPath="$PROJECT_DIR$/server/DB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/actions/actions.js" afterPath="$PROJECT_DIR$/server/admin/actions/actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/actions/data.js" afterPath="$PROJECT_DIR$/server/admin/actions/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/app.jsx" afterPath="$PROJECT_DIR$/server/admin/app.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/components/Chat/Actions.jsx" afterPath="$PROJECT_DIR$/server/admin/components/Chat/Actions.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/components/Chat/Banners.jsx" afterPath="$PROJECT_DIR$/server/admin/components/Chat/Banners.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/components/Chat/Chats.jsx" afterPath="$PROJECT_DIR$/server/admin/components/Chat/Chats.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/components/Chat/IndexChat.jsx" afterPath="$PROJECT_DIR$/server/admin/components/Chat/IndexChat.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx" afterPath="$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/dist/css/style.css" afterPath="$PROJECT_DIR$/server/admin/dist/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/dist/js/app-bundle.js" afterPath="$PROJECT_DIR$/server/admin/dist/js/app-bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/active-event-stack/node_modules/lodash/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/active-event-stack/node_modules/lodash/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/active-event-stack/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/active-event-stack/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/CHANGES.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/es6/useBasename.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/es6/useBasename.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/lib/useBasename.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/lib/useBasename.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/modules/useBasename.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/modules/useBasename.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/umd/History.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/umd/History.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/history/umd/History.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/history/umd/History.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/README.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/contrib/cursor/index.d.ts" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/contrib/cursor/index.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/contrib/cursor/index.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/contrib/cursor/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/dist/immutable.d.ts" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/dist/immutable.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/dist/immutable.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/dist/immutable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/dist/immutable.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/dist/immutable.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/immutable/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/immutable/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-addons-update/LICENSE" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-addons-update/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-addons-update/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-addons-update/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom-server.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom-server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom-server.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom-server.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-dom/dist/react-dom.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-dom/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-dom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/CHANGES.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/CHANGES.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/README.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/API.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/API.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/Glossary.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/Glossary.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/Troubleshooting.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/Troubleshooting.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/guides/ConfirmingNavigation.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/guides/ConfirmingNavigation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/guides/NavigatingOutsideOfComponents.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/guides/NavigatingOutsideOfComponents.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/guides/testing.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/docs/guides/testing.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/AsyncUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/AsyncUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/History.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/History.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/IndexLink.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/IndexLink.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/IndexRedirect.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/IndexRedirect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/IndexRoute.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/IndexRoute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Lifecycle.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Lifecycle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Link.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/PatternUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/PatternUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/PropTypes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/PropTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Redirect.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Redirect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Route.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouteContext.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouteContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouteUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouteUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Router.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/Router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouterContext.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouterContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouterUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RouterUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RoutingContext.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/RoutingContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/TransitionUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/TransitionUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/browserHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/browserHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/computeChangedRoutes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/computeChangedRoutes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/createMemoryHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/createMemoryHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/createRouterHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/createRouterHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/createTransitionManager.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/createTransitionManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/deprecateObjectProperties.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/deprecateObjectProperties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/getComponents.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/getComponents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/getRouteParams.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/getRouteParams.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/hashHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/hashHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/index.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/isActive.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/isActive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/match.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/match.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/matchRoutes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/matchRoutes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/routerWarning.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/routerWarning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/useRouterHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/useRouterHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/useRoutes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/es6/useRoutes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/AsyncUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/AsyncUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/History.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/History.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/IndexLink.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/IndexLink.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/IndexRedirect.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/IndexRedirect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/IndexRoute.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/IndexRoute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Lifecycle.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Lifecycle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Link.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Link.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/PatternUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/PatternUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/PropTypes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/PropTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Redirect.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Redirect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Route.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Route.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouteContext.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouteContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouteUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouteUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Router.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/Router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouterContext.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouterContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouterUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RouterUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RoutingContext.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/RoutingContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/TransitionUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/TransitionUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/browserHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/browserHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/computeChangedRoutes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/computeChangedRoutes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/createMemoryHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/createMemoryHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/createRouterHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/createRouterHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/createTransitionManager.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/createTransitionManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/deprecateObjectProperties.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/deprecateObjectProperties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/getComponents.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/getComponents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/getRouteParams.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/getRouteParams.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/hashHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/hashHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/index.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/isActive.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/isActive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/match.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/match.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/matchRoutes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/matchRoutes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/routerWarning.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/routerWarning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/useRouterHistory.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/useRouterHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/useRoutes.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/lib/useRoutes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/umd/ReactRouter.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/umd/ReactRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-router/umd/ReactRouter.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-router/umd/ReactRouter.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-tap-event-plugin/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-tap-event-plugin/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-tap-event-plugin/src/TapEventPlugin.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-tap-event-plugin/src/TapEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react-tap-event-plugin/src/injectTapEventPlugin.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react-tap-event-plugin/src/injectTapEventPlugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react-with-addons.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react-with-addons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react-with-addons.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react-with-addons.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react.min.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/dist/react.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/EventPluginUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/EventPluginUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactChildReconciler.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactChildReconciler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactChildren.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactChildren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactCompositeComponent.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactCompositeComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMButton.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMButton.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMComponent.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMComponent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMInput.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMInput.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMOption.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMOption.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMSelect.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMSelect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMTextarea.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDOMTextarea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDefaultPerfAnalysis.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactDefaultPerfAnalysis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactTestUtils.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactTestUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactVersion.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/ReactVersion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/SVGDOMPropertyConfig.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/SVGDOMPropertyConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/flattenChildren.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/flattenChildren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/onlyChild.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/onlyChild.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/traverseAllChildren.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/traverseAllChildren.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/lib/validateDOMNesting.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/lib/validateDOMNesting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/react/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/react/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/redux/LICENSE.md" afterPath="$PROJECT_DIR$/server/admin/node_modules/redux/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/redux/dist/redux.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/redux/dist/redux.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/redux/es/utils/warning.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/redux/es/utils/warning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/redux/lib/utils/warning.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/redux/lib/utils/warning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/redux/package.json" afterPath="$PROJECT_DIR$/server/admin/node_modules/redux/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/node_modules/redux/src/utils/warning.js" afterPath="$PROJECT_DIR$/server/admin/node_modules/redux/src/utils/warning.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/package.json" afterPath="$PROJECT_DIR$/server/admin/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/admin/reducers/index.js" afterPath="$PROJECT_DIR$/server/admin/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app.js" afterPath="$PROJECT_DIR$/server/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/agents/index.js" afterPath="$PROJECT_DIR$/server/controllers/agents/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/chat/index.js" afterPath="$PROJECT_DIR$/server/controllers/chat/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/client/index.js" afterPath="$PROJECT_DIR$/server/controllers/client/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js" afterPath="$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/cronjobs/reset_redis_chats.js" afterPath="$PROJECT_DIR$/server/cronjobs/reset_redis_chats.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js" afterPath="$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js" />
     </list>
     <ignored path="buschat.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,103 +198,213 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/client/index.js">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/admin/actions/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1657">
-              <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
+            <state relative-caret-position="1944">
+              <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/admin/actions/data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
               <folding>
-                <element signature="n#!!block;n#keepSessionRedis#0;n#Client#0" expanded="false" />
-                <element signature="e#363#708#0" expanded="false" />
-                <element signature="e#449#625#0" expanded="false" />
-                <element signature="e#503#611#0" expanded="false" />
-                <element signature="n#!!block;n#keepSession#0;n#Client#0" expanded="false" />
-                <element signature="e#6783#6839#0" expanded="false" />
+                <element signature="n#!!block;n#showAddAgentDialog#0" expanded="false" />
+                <element signature="e#228#317#0" expanded="false" />
+                <element signature="n#!!block;n#hideAddAgentDialog#0" expanded="false" />
+                <element signature="e#460#549#0" expanded="false" />
+                <element signature="n#!!block;n#addAgent#0" expanded="false" />
+                <element signature="e#742#856#0" expanded="false" />
+                <element signature="e#812#850#0" expanded="false" />
+                <element signature="e#886#1477#0" expanded="false" />
+                <element signature="e#971#1383#0" expanded="false" />
+                <element signature="e#1400#1471#0" expanded="false" />
+                <element signature="e#1483#1575#0" expanded="false" />
+                <element signature="e#1500#1569#0" expanded="false" />
+                <element signature="n#!!block;n#setBrands#0" expanded="false" />
+                <element signature="e#1728#1788#0" expanded="false" />
+                <element signature="n#!!block;n#login#0" expanded="false" />
+                <element signature="e#1916#2113#0" expanded="false" />
+                <element signature="e#2166#2227#0" expanded="false" />
+                <element signature="n#!!block;n#getChats#0" expanded="false" />
+                <element signature="e#2446#2505#0" expanded="false" />
+                <element signature="n#!!block;n#getBanners#0" expanded="false" />
+                <element signature="e#2658#2719#0" expanded="false" />
+                <element signature="n#!!block;n#showBanners#0" expanded="false" />
+                <element signature="e#2766#2825#0" expanded="false" />
+                <element signature="n#!!block;n#hideBanners#0" expanded="false" />
+                <element signature="e#2872#2931#0" expanded="false" />
+                <element signature="n#!!block;n#selectedBannerSessionHash#0" expanded="false" />
+                <element signature="e#3004#3087#0" expanded="false" />
+                <element signature="e#3143#3207#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buschat-script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/buschat-script.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+            <state relative-caret-position="270">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <element signature="e#699#986#0" expanded="false" />
-                <element signature="e#771#907#0" expanded="false" />
-                <element signature="n#!!block;n#closeBanner#0;n#Nuntius#0" expanded="false" />
-                <element signature="n#!!block;n#getUserDetails#0;n#Nuntius#0" expanded="false" />
-                <element signature="e#3886#4099#0" expanded="false" />
-                <element signature="e#4015#4084#0" expanded="false" />
-                <element signature="e#4716#14066#0" expanded="false" />
-                <element signature="n#!!block;n#openChatWindow#0;n#Nuntius#0" expanded="false" />
-                <element signature="e#14357#14437#0" expanded="false" />
-                <element signature="e#14480#14663#0" expanded="false" />
-                <element signature="n#!!block;n#closeChatWindow#0;n#Nuntius#0" expanded="false" />
-                <element signature="e#15351#15466#0" expanded="false" />
-                <element signature="n#!!block;n#serverInteraction#0;n#Nuntius#0" expanded="false" />
-                <element signature="e#15981#16341#0" expanded="false" />
-                <element signature="e#16109#16323#0" expanded="false" />
-                <element signature="e#16158#16305#0" expanded="false" />
-                <element signature="e#16760#17221#0" expanded="false" />
-                <element signature="e#16885#17024#0" expanded="false" />
-                <element signature="e#17078#17207#0" expanded="false" />
-                <element signature="e#19224#20114#0" expanded="false" />
-                <element signature="e#20872#21283#0" expanded="false" />
-                <element signature="e#21171#21258#0" expanded="false" />
-                <element signature="e#21289#21636#0" expanded="false" />
-                <element signature="e#21524#21611#0" expanded="false" />
-                <element signature="n#!!block;n#convertDatetime#0;n#Nuntius#0" expanded="false" />
-                <element signature="n#!!block;n#deleteSession#0;n#Nuntius#0" expanded="false" />
-                <marker date="1461626357058" expanded="true" signature="1668:1710" placeholder="..." />
-                <marker date="1461626357058" expanded="true" signature="2830:3030" placeholder="..." />
-                <marker date="1461626357058" expanded="true" signature="10820:10852" placeholder="..." />
-                <marker date="1461626357058" expanded="false" signature="12805:12816" placeholder="..." />
-                <marker date="1461626357058" expanded="true" signature="12954:13110" placeholder="..." />
+                <element signature="e#700#1168#0" expanded="false" />
+                <element signature="e#1212#1414#0" expanded="false" />
+                <element signature="e#1378#1410#0" expanded="false" />
+                <element signature="e#1475#1900#0" expanded="false" />
+                <element signature="e#1865#1896#0" expanded="false" />
+                <element signature="e#1963#2387#0" expanded="false" />
+                <element signature="e#2351#2383#0" expanded="false" />
+                <element signature="e#2444#2790#0" expanded="false" />
+                <element signature="e#2754#2786#0" expanded="false" />
+                <element signature="e#2850#3152#0" expanded="false" />
+                <element signature="e#3118#3148#0" expanded="false" />
+                <element signature="e#3214#4184#0" expanded="false" />
+                <element signature="e#4149#4180#0" expanded="false" />
+                <element signature="e#4241#4551#0" expanded="false" />
+                <element signature="e#4516#4547#0" expanded="false" />
+                <element signature="e#4608#5279#0" expanded="false" />
+                <element signature="e#5244#5275#0" expanded="false" />
+                <element signature="e#5323#5614#0" expanded="false" />
+                <element signature="e#5579#5610#0" expanded="false" />
+                <element signature="e#5680#5879#0" expanded="false" />
+                <element signature="e#5844#5875#0" expanded="false" />
+                <element signature="e#5936#6310#0" expanded="false" />
+                <element signature="e#6210#6241#0" expanded="false" />
+                <element signature="e#6268#6307#0" expanded="false" />
+                <element signature="e#6358#6928#0" expanded="false" />
+                <element signature="e#6893#6924#0" expanded="false" />
+                <element signature="e#6987#7193#0" expanded="false" />
+                <element signature="e#7158#7189#0" expanded="false" />
+                <element signature="e#7256#7342#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reset_redis_actions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js">
+      <file leaf-file-name="Statistics.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Statistics.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="25" column="117" selection-start-line="25" selection-start-column="117" selection-end-line="25" selection-end-column="117" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reset_redis_sessions.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sessions.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chats.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Chats.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+            <state relative-caret-position="198">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activate.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/activate.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ecosystem.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ecosystem.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/chat/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1504">
+              <caret line="408" column="33" selection-start-line="408" selection-start-column="33" selection-end-line="408" selection-end-column="33" />
+              <folding>
+                <element signature="e#169#212#0" expanded="false" />
+                <element signature="n#!!block;n#keepSession#0;n#Chat#0" expanded="false" />
+                <element signature="e#1259#1549#0" expanded="false" />
+                <element signature="e#1323#1538#0" expanded="false" />
+                <element signature="n#!!block;n#postMessage#0;n#Chat#0" expanded="false" />
+                <element signature="e#2690#3652#0" expanded="false" />
+                <element signature="e#3128#3640#0" expanded="false" />
+                <element signature="e#3170#3415#0" expanded="false" />
+                <element signature="e#3279#3397#0" expanded="false" />
+                <element signature="e#3421#3586#0" expanded="false" />
+                <element signature="e#3463#3568#0" expanded="false" />
+                <element signature="n#!!block;n#getSessionsRedis#0;n#Chat#0" expanded="false" />
+                <element signature="e#3736#3925#0" expanded="false" />
+                <element signature="e#3804#3913#0" expanded="false" />
+                <element signature="n#!!block;n#getSessions#0;n#Chat#0" expanded="false" />
+                <element signature="e#4044#6238#0" expanded="false" />
+                <element signature="e#4134#4277#0" expanded="false" />
+                <element signature="e#4343#6225#0" expanded="false" />
+                <element signature="e#4476#4702#0" expanded="false" />
+                <element signature="e#4505#4648#0" expanded="false" />
+                <element signature="e#4708#4931#0" expanded="false" />
+                <element signature="e#4742#4879#0" expanded="false" />
+                <element signature="e#4948#4957#0" expanded="false" />
+                <element signature="e#6318#6491#0" expanded="false" />
+                <element signature="e#6380#6479#0" expanded="false" />
+                <element signature="n#!!block;n#getChats#0;n#Chat#0" expanded="false" />
+                <element signature="e#6620#8498#0" expanded="false" />
+                <element signature="e#6710#6898#0" expanded="false" />
+                <element signature="e#6958#8484#0" expanded="false" />
+                <element signature="e#7066#7290#0" expanded="false" />
+                <element signature="e#7100#7237#0" expanded="false" />
+                <element signature="e#7296#8470#0" expanded="false" />
+                <element signature="e#7640#8450#0" expanded="false" />
+                <element signature="e#7724#8200#0" expanded="false" />
+                <element signature="e#7835#7956#0" expanded="false" />
+                <element signature="e#7998#8174#0" expanded="false" />
+                <element signature="e#8206#8389#0" expanded="false" />
+                <element signature="e#8248#8363#0" expanded="false" />
+                <element signature="e#8932#9324#0" expanded="false" />
+                <element signature="e#9089#9264#0" expanded="false" />
+                <element signature="n#!!block;n#deleteSessionRedis#0;n#Chat#0" expanded="false" />
+                <element signature="e#9415#9449#0" expanded="false" />
+                <element signature="n#!!block;n#deleteSession#0;n#Chat#0" expanded="false" />
+                <element signature="e#9561#10194#0" expanded="false" />
+                <element signature="e#9753#10183#0" expanded="false" />
+                <element signature="e#9780#9958#0" expanded="false" />
+                <element signature="e#9818#9940#0" expanded="false" />
+                <element signature="e#9964#10137#0" expanded="false" />
+                <element signature="e#10002#10119#0" expanded="false" />
+                <element signature="n#!!block;n#postAction#0;n#Chat#0" expanded="false" />
+                <element signature="e#10357#11411#0" expanded="false" />
+                <element signature="e#10557#11400#0" expanded="false" />
+                <element signature="e#10585#11324#0" expanded="false" />
+                <element signature="e#10769#11305#0" expanded="false" />
+                <element signature="e#10819#11031#0" expanded="false" />
+                <element signature="e#10865#11005#0" expanded="false" />
+                <element signature="e#11037#11243#0" expanded="false" />
+                <element signature="e#11083#11217#0" expanded="false" />
+                <element signature="e#11330#11386#0" expanded="false" />
+                <element signature="n#!!block;n#getMessagesRedis#0;n#Chat#0" expanded="false" />
+                <element signature="e#11745#11807#0" expanded="false" />
+                <element signature="e#11848#12352#0" expanded="false" />
+                <element signature="e#11916#12341#0" expanded="false" />
+                <element signature="e#12056#12287#0" expanded="false" />
+                <element signature="n#!!block;n#getMessages#0;n#Chat#0" expanded="false" />
+                <element signature="e#12489#14582#0" expanded="false" />
+                <element signature="e#12522#12747#0" expanded="false" />
+                <element signature="e#12553#12699#0" expanded="false" />
+                <element signature="e#12828#14569#0" expanded="false" />
+                <element signature="e#12879#13111#0" expanded="false" />
+                <element signature="e#12914#13057#0" expanded="false" />
+                <element signature="e#13117#14555#0" expanded="false" />
+                <element signature="e#13459#14536#0" expanded="false" />
+                <element signature="e#13494#14474#0" expanded="false" />
+                <element signature="e#13544#13843#0" expanded="false" />
+                <element signature="e#13619#13731#0" expanded="false" />
+                <element signature="e#13890#14158#0" expanded="false" />
+                <element signature="e#13933#14128#0" expanded="false" />
+                <element signature="e#14164#14448#0" expanded="false" />
+                <element signature="e#14207#14418#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -150,31 +425,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/actions/data.js" />
-        <option value="$PROJECT_DIR$/admin/components/ChatBoxes.jsx" />
-        <option value="$PROJECT_DIR$/admin/dist/css/style.css" />
-        <option value="$PROJECT_DIR$/server/DB.js" />
-        <option value="$PROJECT_DIR$/admin/components/Chats.jsx" />
-        <option value="$PROJECT_DIR$/admin/package.json" />
-        <option value="$PROJECT_DIR$/server/package.json" />
-        <option value="$PROJECT_DIR$/server/client/buschat-script.js" />
-        <option value="$PROJECT_DIR$/client/node_modules/superagent/superagent.js" />
         <option value="$PROJECT_DIR$/client/node_modules/superagent/lib/request-base.js" />
         <option value="$PROJECT_DIR$/client/buschat-bundle.js" />
         <option value="$PROJECT_DIR$/server/admin/package.json" />
         <option value="$PROJECT_DIR$/server/admin/components/ChatBoxes.jsx" />
-        <option value="$PROJECT_DIR$/server/admin/webpack.config.js" />
         <option value="$PROJECT_DIR$/server/admin/config.js" />
         <option value="&lt;2bb86e1b-e2ee-4187-936a-fa9bbb5807e9&gt;/server/config.js" />
         <option value="$PROJECT_DIR$/server/config.js" />
-        <option value="$PROJECT_DIR$/server/admin/components/Login.jsx" />
         <option value="$PROJECT_DIR$/server/admin/index.html" />
         <option value="$PROJECT_DIR$/server/admin/components/Layout.jsx" />
         <option value="$PROJECT_DIR$/client/index.html" />
-        <option value="$PROJECT_DIR$/server/admin/reducers/index.js" />
         <option value="$PROJECT_DIR$/server/nodemon.json" />
-        <option value="$PROJECT_DIR$/server/admin/actions/data.js" />
-        <option value="$PROJECT_DIR$/server/admin/actions/actions.js" />
         <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_chat.js" />
         <option value="$PROJECT_DIR$/server/admin/components/Chats.jsx" />
         <option value="$PROJECT_DIR$/server/admin/components/Banners.jsx" />
@@ -182,25 +443,39 @@
         <option value="$PROJECT_DIR$/server/admin/components/Sessions.jsx" />
         <option value="$PROJECT_DIR$/server/admin/components/Chat.js" />
         <option value="$PROJECT_DIR$/server/admin/components/Chat/Index.js" />
-        <option value="$PROJECT_DIR$/server/admin/app.jsx" />
         <option value="$PROJECT_DIR$/server/admin/components/Chat/Index.jsx" />
-        <option value="$PROJECT_DIR$/server/admin/components/Chat/IndexChat.jsx" />
         <option value="$PROJECT_DIR$/server/cronjobs/index.js" />
-        <option value="$PROJECT_DIR$/server/admin/components/Chat/Actions.jsx" />
-        <option value="$PROJECT_DIR$/server/admin/dist/css/style.css" />
-        <option value="$PROJECT_DIR$/server/admin/components/Chat/Banners.jsx" />
         <option value="$PROJECT_DIR$/server/controllers/actions/index.js" />
-        <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_chats.js" />
-        <option value="$PROJECT_DIR$/server/controllers/chat/index.js" />
-        <option value="$PROJECT_DIR$/server/app.js" />
-        <option value="$PROJECT_DIR$/server/controllers/client/index.js" />
         <option value="$PROJECT_DIR$/server/controllers/banners/index.js" />
-        <option value="$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx" />
         <option value="$PROJECT_DIR$/tools_functions.js" />
-        <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js" />
-        <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js" />
         <option value="$PROJECT_DIR$/client/buschat-script.js" />
+        <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js" />
+        <option value="$PROJECT_DIR$/server/admin/components/Login.jsx" />
+        <option value="$PROJECT_DIR$/server/controllers/system/index.js" />
+        <option value="$PROJECT_DIR$/server/controllers/client/index.js" />
+        <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js" />
+        <option value="$PROJECT_DIR$/server/admin/app.jsx" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/Actions.jsx" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/Banners.jsx" />
+        <option value="$PROJECT_DIR$/server/controllers/agents/index.js" />
+        <option value="$PROJECT_DIR$/server/DB.js" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/Settings.jsx" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/AddAgentDialog.jsx" />
+        <option value="$PROJECT_DIR$/server/admin/dist/css/style.css" />
         <option value="$PROJECT_DIR$/server/admin/components/Chat/Chats.jsx" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx" />
+        <option value="$PROJECT_DIR$/server/cronjobs/reset_redis_chats.js" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/IndexChat.jsx" />
+        <option value="$PROJECT_DIR$/server/admin/webpack.config.js" />
+        <option value="$PROJECT_DIR$/server/admin/reducers/index.js" />
+        <option value="$PROJECT_DIR$/server/admin/actions/actions.js" />
+        <option value="$PROJECT_DIR$/server/controllers/chat/index.js" />
+        <option value="$PROJECT_DIR$/server/admin/actions/data.js" />
+        <option value="$PROJECT_DIR$/server/admin/HighChartsTheme.js" />
+        <option value="$PROJECT_DIR$/server/admin/components/Chat/Statistics.jsx" />
+        <option value="$PROJECT_DIR$/activate.sh" />
+        <option value="$PROJECT_DIR$/ecosystem.json" />
+        <option value="$PROJECT_DIR$/server/app.js" />
       </list>
     </option>
   </component>
@@ -227,12 +502,23 @@
             <id />
           </State>
           <State>
+            <id>General</id>
+          </State>
+          <State>
             <id>GeneralJavaScript</id>
           </State>
           <State>
             <id>JavaScript</id>
           </State>
+          <State>
+            <id>XPath</id>
+          </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -261,7 +547,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,101 +566,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cronjobs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nuntius" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="JavaScriptPreferStrict" value="false" />
@@ -400,16 +600,46 @@
       <recent name="E:\wamp\www\nuntius\server\controllers" />
     </key>
   </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost" />
+          <option name="urlPath" value="/chat/getChatStatistics" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="companyId" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -460,7 +690,8 @@
       <workItem from="1460821267997" duration="9578000" />
       <workItem from="1460896250064" duration="3643000" />
       <workItem from="1460908318676" duration="59733000" />
-      <workItem from="1461364505873" duration="40582000" />
+      <workItem from="1461364505873" duration="97964000" />
+      <workItem from="1462378245878" duration="169000" />
     </task>
     <task id="LOCAL-00001" summary="800">
       <created>1460822272199</created>
@@ -609,33 +840,41 @@
       <option name="project" value="LOCAL" />
       <updated>1461626802339</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="first commits">
+      <created>1461626867118</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1461626867118</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329663000" />
+    <option name="totallyTimeSpent" value="387214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22814499" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16275346" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.114727855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35969663" sideWeight="0.5042644" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24147122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28135222" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46346784" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293348" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24147122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -660,55 +899,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/client/index.html" />
-    <entry file="file://$PROJECT_DIR$/server/client/buschat-script.js" />
-    <entry file="file://$PROJECT_DIR$/client/buschat-bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="1663" column="42" selection-start-line="1663" selection-start-column="42" selection-end-line="1663" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/superagent/lib/request-base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/superagent/superagent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="62" column="3" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/reducers/reducer_brands.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/node_modules/material-ui/lib/svg-icons/communication/business.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/admin/components/Default.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -717,13 +919,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/admin/components/ChatBoxes.jsx" />
-    <entry file="file://$PROJECT_DIR$/server/controllers/agents/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
@@ -731,26 +926,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Login.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="9245" column="22" selection-start-line="9245" selection-start-column="22" selection-end-line="9245" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +944,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,15 +951,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/actions/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,15 +966,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/actions/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -828,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-907">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -836,120 +994,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Chat.js" />
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Index.js" />
     <entry file="file://$PROJECT_DIR$/server/admin/components/Layout.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#68#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/IndexChat.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/dist/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="149" column="10" selection-start-line="149" selection-start-column="10" selection-end-line="149" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Banners.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1476">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1461526980564" expanded="true" signature="2030:2072" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!block;n#postActionRedis#0;n#Action#0" expanded="false" />
-            <element signature="e#404#484#0" expanded="false" />
-            <element signature="n#!!block;n#postAction#0;n#Action#0" expanded="false" />
-            <element signature="e#658#1497#0" expanded="false" />
-            <element signature="e#1013#1486#0" expanded="false" />
-            <element signature="e#1104#1272#0" expanded="false" />
-            <element signature="e#1138#1254#0" expanded="false" />
-            <element signature="e#1278#1440#0" expanded="false" />
-            <element signature="e#1312#1422#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="49" column="48" selection-start-line="49" selection-start-column="48" selection-end-line="49" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Index.jsx" />
     <entry file="file://$PROJECT_DIR$/server/cronjobs/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,99 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="88" column="56" selection-start-line="88" selection-start-column="56" selection-end-line="88" selection-end-column="56" />
-          <folding>
-            <element signature="n#!!block;n#getBanners#0;n#Banners#0" expanded="false" />
-            <element signature="e#287#1247#0" expanded="false" />
-            <element signature="e#407#584#0" expanded="false" />
-            <element signature="e#443#539#0" expanded="false" />
-            <element signature="e#800#1235#0" expanded="false" />
-            <element signature="e#834#985#0" expanded="false" />
-            <element signature="e#874#967#0" expanded="false" />
-            <element signature="e#991#1184#0" expanded="false" />
-            <element signature="e#1031#1166#0" expanded="false" />
-            <element signature="e#3936#4008#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/chat/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1262">
-          <caret line="202" column="40" selection-start-line="202" selection-start-column="40" selection-end-line="202" selection-end-column="40" />
-          <folding>
-            <element signature="e#169#212#0" expanded="false" />
-            <element signature="e#2590#2708#0" expanded="false" />
-            <element signature="e#2732#2897#0" expanded="false" />
-            <element signature="e#2774#2879#0" expanded="false" />
-            <element signature="e#3047#3236#0" expanded="false" />
-            <element signature="e#3115#3224#0" expanded="false" />
-            <element signature="e#3445#3588#0" expanded="false" />
-            <element signature="e#3654#5184#0" expanded="false" />
-            <element signature="e#3767#3993#0" expanded="false" />
-            <element signature="e#3796#3939#0" expanded="false" />
-            <element signature="e#3999#5170#0" expanded="false" />
-            <element signature="e#4345#5150#0" expanded="false" />
-            <element signature="e#4429#4900#0" expanded="false" />
-            <element signature="e#4540#4653#0" expanded="false" />
-            <element signature="e#4695#4874#0" expanded="false" />
-            <element signature="e#4906#5089#0" expanded="false" />
-            <element signature="e#4948#5063#0" expanded="false" />
-            <element signature="n#!!block;n#getChatsRedis#0;n#Chat#0" expanded="false" />
-            <element signature="e#5277#5450#0" expanded="false" />
-            <element signature="e#5339#5438#0" expanded="false" />
-            <element signature="n#!!block;n#getChats#0;n#Chat#0" expanded="false" />
-            <element signature="e#5580#7459#0" expanded="false" />
-            <element signature="e#5670#5858#0" expanded="false" />
-            <element signature="e#5919#7445#0" expanded="false" />
-            <element signature="e#6027#6251#0" expanded="false" />
-            <element signature="e#6061#6198#0" expanded="false" />
-            <element signature="e#6257#7431#0" expanded="false" />
-            <element signature="e#6601#7411#0" expanded="false" />
-            <element signature="e#6685#7161#0" expanded="false" />
-            <element signature="e#6796#6917#0" expanded="false" />
-            <element signature="e#6959#7135#0" expanded="false" />
-            <element signature="e#7167#7350#0" expanded="false" />
-            <element signature="e#7209#7324#0" expanded="false" />
-            <element signature="e#7963#8055#0" expanded="false" />
-            <element signature="n#!!block;n#deleteSessionRedis#0;n#Chat#0" expanded="false" />
-            <element signature="e#8206#8240#0" expanded="false" />
-            <element signature="n#!!block;n#deleteSession#0;n#Chat#0" expanded="false" />
-            <element signature="e#8352#8985#0" expanded="false" />
-            <element signature="e#8544#8974#0" expanded="false" />
-            <element signature="e#8571#8749#0" expanded="false" />
-            <element signature="e#8609#8731#0" expanded="false" />
-            <element signature="e#8755#8928#0" expanded="false" />
-            <element signature="e#8793#8910#0" expanded="false" />
-            <element signature="n#!!block;n#postAction#0;n#Chat#0" expanded="false" />
-            <element signature="e#9148#10202#0" expanded="false" />
-            <element signature="e#9348#10191#0" expanded="false" />
-            <element signature="e#9376#10115#0" expanded="false" />
-            <element signature="e#9560#10096#0" expanded="false" />
-            <element signature="e#9610#9822#0" expanded="false" />
-            <element signature="e#9656#9796#0" expanded="false" />
-            <element signature="e#9828#10034#0" expanded="false" />
-            <element signature="e#9874#10008#0" expanded="false" />
-            <element signature="e#10121#10177#0" expanded="false" />
-            <element signature="n#!!block;n#getMessagesRedis#0;n#Chat#0" expanded="false" />
-            <element signature="e#10536#10598#0" expanded="false" />
-            <element signature="e#10639#11143#0" expanded="false" />
-            <element signature="e#10707#11132#0" expanded="false" />
-            <element signature="e#10847#11078#0" expanded="false" />
-            <element signature="e#11313#11538#0" expanded="false" />
-            <element signature="e#11344#11490#0" expanded="false" />
-            <element signature="e#11619#13360#0" expanded="false" />
-            <element signature="e#11670#11902#0" expanded="false" />
-            <element signature="e#11705#11848#0" expanded="false" />
-            <element signature="e#11908#13346#0" expanded="false" />
-            <element signature="e#12250#13327#0" expanded="false" />
-            <element signature="e#12285#13265#0" expanded="false" />
-            <element signature="e#12335#12634#0" expanded="false" />
-            <element signature="e#12410#12522#0" expanded="false" />
-            <element signature="e#12681#12949#0" expanded="false" />
-            <element signature="e#12724#12919#0" expanded="false" />
-            <element signature="e#12955#13239#0" expanded="false" />
-            <element signature="e#12998#13209#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1057,7 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1065,115 +1032,358 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Actions.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="n#!!block;n#mapStateToProps#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_chats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="25" column="117" selection-start-line="25" selection-start-column="117" selection-end-line="25" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1657">
-          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="128" selection-end-column="16" />
-          <folding>
-            <element signature="n#!!block;n#keepSessionRedis#0;n#Client#0" expanded="false" />
-            <element signature="e#363#708#0" expanded="false" />
-            <element signature="e#449#625#0" expanded="false" />
-            <element signature="e#503#611#0" expanded="false" />
-            <element signature="n#!!block;n#keepSession#0;n#Client#0" expanded="false" />
-            <element signature="e#6783#6839#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/buschat-script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+        <state relative-caret-position="270">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Login.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="75" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/system/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="122" column="45" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_sessions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Banners.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Actions.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/agents/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/DB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/AddAgentDialog.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/dist/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/IndexChat.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cronjobs/reset_redis_chats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Sessions.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="3" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="101" selection-start-line="2" selection-start-column="101" selection-end-line="2" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/actions/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#699#986#0" expanded="false" />
-            <element signature="e#771#907#0" expanded="false" />
-            <element signature="n#!!block;n#closeBanner#0;n#Nuntius#0" expanded="false" />
-            <element signature="n#!!block;n#getUserDetails#0;n#Nuntius#0" expanded="false" />
-            <element signature="e#3886#4099#0" expanded="false" />
-            <element signature="e#4015#4084#0" expanded="false" />
-            <element signature="e#4716#14066#0" expanded="false" />
-            <element signature="n#!!block;n#openChatWindow#0;n#Nuntius#0" expanded="false" />
-            <element signature="e#14357#14437#0" expanded="false" />
-            <element signature="e#14480#14663#0" expanded="false" />
-            <element signature="n#!!block;n#closeChatWindow#0;n#Nuntius#0" expanded="false" />
-            <element signature="e#15351#15466#0" expanded="false" />
-            <element signature="n#!!block;n#serverInteraction#0;n#Nuntius#0" expanded="false" />
-            <element signature="e#15981#16341#0" expanded="false" />
-            <element signature="e#16109#16323#0" expanded="false" />
-            <element signature="e#16158#16305#0" expanded="false" />
-            <element signature="e#16760#17221#0" expanded="false" />
-            <element signature="e#16885#17024#0" expanded="false" />
-            <element signature="e#17078#17207#0" expanded="false" />
-            <element signature="e#19224#20114#0" expanded="false" />
-            <element signature="e#20872#21283#0" expanded="false" />
-            <element signature="e#21171#21258#0" expanded="false" />
-            <element signature="e#21289#21636#0" expanded="false" />
-            <element signature="e#21524#21611#0" expanded="false" />
-            <element signature="n#!!block;n#convertDatetime#0;n#Nuntius#0" expanded="false" />
-            <element signature="n#!!block;n#deleteSession#0;n#Nuntius#0" expanded="false" />
-            <marker date="1461626357058" expanded="true" signature="1668:1710" placeholder="..." />
-            <marker date="1461626357058" expanded="true" signature="2830:3030" placeholder="..." />
-            <marker date="1461626357058" expanded="true" signature="10820:10852" placeholder="..." />
-            <marker date="1461626357058" expanded="false" signature="12805:12816" placeholder="..." />
-            <marker date="1461626357058" expanded="true" signature="12954:13110" placeholder="..." />
+            <element signature="n#!!block;n#showAddAgentDialog#0" expanded="false" />
+            <element signature="e#228#317#0" expanded="false" />
+            <element signature="n#!!block;n#hideAddAgentDialog#0" expanded="false" />
+            <element signature="e#460#549#0" expanded="false" />
+            <element signature="n#!!block;n#addAgent#0" expanded="false" />
+            <element signature="e#742#856#0" expanded="false" />
+            <element signature="e#812#850#0" expanded="false" />
+            <element signature="e#886#1477#0" expanded="false" />
+            <element signature="e#971#1383#0" expanded="false" />
+            <element signature="e#1400#1471#0" expanded="false" />
+            <element signature="e#1483#1575#0" expanded="false" />
+            <element signature="e#1500#1569#0" expanded="false" />
+            <element signature="n#!!block;n#setBrands#0" expanded="false" />
+            <element signature="e#1728#1788#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="e#1916#2113#0" expanded="false" />
+            <element signature="e#2166#2227#0" expanded="false" />
+            <element signature="n#!!block;n#getChats#0" expanded="false" />
+            <element signature="e#2446#2505#0" expanded="false" />
+            <element signature="n#!!block;n#getBanners#0" expanded="false" />
+            <element signature="e#2658#2719#0" expanded="false" />
+            <element signature="n#!!block;n#showBanners#0" expanded="false" />
+            <element signature="e#2766#2825#0" expanded="false" />
+            <element signature="n#!!block;n#hideBanners#0" expanded="false" />
+            <element signature="e#2872#2931#0" expanded="false" />
+            <element signature="n#!!block;n#selectedBannerSessionHash#0" expanded="false" />
+            <element signature="e#3004#3087#0" expanded="false" />
+            <element signature="e#3143#3207#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/HighChartsTheme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Chats.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="-942">
+          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Settings.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/actions/actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="108" column="14" selection-start-line="108" selection-start-column="14" selection-end-line="108" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/admin/components/Chat/Statistics.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/activate.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ecosystem.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/chat/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1504">
+          <caret line="408" column="33" selection-start-line="408" selection-start-column="33" selection-end-line="408" selection-end-column="33" />
+          <folding>
+            <element signature="e#169#212#0" expanded="false" />
+            <element signature="n#!!block;n#keepSession#0;n#Chat#0" expanded="false" />
+            <element signature="e#1259#1549#0" expanded="false" />
+            <element signature="e#1323#1538#0" expanded="false" />
+            <element signature="n#!!block;n#postMessage#0;n#Chat#0" expanded="false" />
+            <element signature="e#2690#3652#0" expanded="false" />
+            <element signature="e#3128#3640#0" expanded="false" />
+            <element signature="e#3170#3415#0" expanded="false" />
+            <element signature="e#3279#3397#0" expanded="false" />
+            <element signature="e#3421#3586#0" expanded="false" />
+            <element signature="e#3463#3568#0" expanded="false" />
+            <element signature="n#!!block;n#getSessionsRedis#0;n#Chat#0" expanded="false" />
+            <element signature="e#3736#3925#0" expanded="false" />
+            <element signature="e#3804#3913#0" expanded="false" />
+            <element signature="n#!!block;n#getSessions#0;n#Chat#0" expanded="false" />
+            <element signature="e#4044#6238#0" expanded="false" />
+            <element signature="e#4134#4277#0" expanded="false" />
+            <element signature="e#4343#6225#0" expanded="false" />
+            <element signature="e#4476#4702#0" expanded="false" />
+            <element signature="e#4505#4648#0" expanded="false" />
+            <element signature="e#4708#4931#0" expanded="false" />
+            <element signature="e#4742#4879#0" expanded="false" />
+            <element signature="e#4948#4957#0" expanded="false" />
+            <element signature="e#6318#6491#0" expanded="false" />
+            <element signature="e#6380#6479#0" expanded="false" />
+            <element signature="n#!!block;n#getChats#0;n#Chat#0" expanded="false" />
+            <element signature="e#6620#8498#0" expanded="false" />
+            <element signature="e#6710#6898#0" expanded="false" />
+            <element signature="e#6958#8484#0" expanded="false" />
+            <element signature="e#7066#7290#0" expanded="false" />
+            <element signature="e#7100#7237#0" expanded="false" />
+            <element signature="e#7296#8470#0" expanded="false" />
+            <element signature="e#7640#8450#0" expanded="false" />
+            <element signature="e#7724#8200#0" expanded="false" />
+            <element signature="e#7835#7956#0" expanded="false" />
+            <element signature="e#7998#8174#0" expanded="false" />
+            <element signature="e#8206#8389#0" expanded="false" />
+            <element signature="e#8248#8363#0" expanded="false" />
+            <element signature="e#8932#9324#0" expanded="false" />
+            <element signature="e#9089#9264#0" expanded="false" />
+            <element signature="n#!!block;n#deleteSessionRedis#0;n#Chat#0" expanded="false" />
+            <element signature="e#9415#9449#0" expanded="false" />
+            <element signature="n#!!block;n#deleteSession#0;n#Chat#0" expanded="false" />
+            <element signature="e#9561#10194#0" expanded="false" />
+            <element signature="e#9753#10183#0" expanded="false" />
+            <element signature="e#9780#9958#0" expanded="false" />
+            <element signature="e#9818#9940#0" expanded="false" />
+            <element signature="e#9964#10137#0" expanded="false" />
+            <element signature="e#10002#10119#0" expanded="false" />
+            <element signature="n#!!block;n#postAction#0;n#Chat#0" expanded="false" />
+            <element signature="e#10357#11411#0" expanded="false" />
+            <element signature="e#10557#11400#0" expanded="false" />
+            <element signature="e#10585#11324#0" expanded="false" />
+            <element signature="e#10769#11305#0" expanded="false" />
+            <element signature="e#10819#11031#0" expanded="false" />
+            <element signature="e#10865#11005#0" expanded="false" />
+            <element signature="e#11037#11243#0" expanded="false" />
+            <element signature="e#11083#11217#0" expanded="false" />
+            <element signature="e#11330#11386#0" expanded="false" />
+            <element signature="n#!!block;n#getMessagesRedis#0;n#Chat#0" expanded="false" />
+            <element signature="e#11745#11807#0" expanded="false" />
+            <element signature="e#11848#12352#0" expanded="false" />
+            <element signature="e#11916#12341#0" expanded="false" />
+            <element signature="e#12056#12287#0" expanded="false" />
+            <element signature="n#!!block;n#getMessages#0;n#Chat#0" expanded="false" />
+            <element signature="e#12489#14582#0" expanded="false" />
+            <element signature="e#12522#12747#0" expanded="false" />
+            <element signature="e#12553#12699#0" expanded="false" />
+            <element signature="e#12828#14569#0" expanded="false" />
+            <element signature="e#12879#13111#0" expanded="false" />
+            <element signature="e#12914#13057#0" expanded="false" />
+            <element signature="e#13117#14555#0" expanded="false" />
+            <element signature="e#13459#14536#0" expanded="false" />
+            <element signature="e#13494#14474#0" expanded="false" />
+            <element signature="e#13544#13843#0" expanded="false" />
+            <element signature="e#13619#13731#0" expanded="false" />
+            <element signature="e#13890#14158#0" expanded="false" />
+            <element signature="e#13933#14128#0" expanded="false" />
+            <element signature="e#14164#14448#0" expanded="false" />
+            <element signature="e#14207#14418#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding>
+            <element signature="e#700#1168#0" expanded="false" />
+            <element signature="e#1212#1414#0" expanded="false" />
+            <element signature="e#1378#1410#0" expanded="false" />
+            <element signature="e#1475#1900#0" expanded="false" />
+            <element signature="e#1865#1896#0" expanded="false" />
+            <element signature="e#1963#2387#0" expanded="false" />
+            <element signature="e#2351#2383#0" expanded="false" />
+            <element signature="e#2444#2790#0" expanded="false" />
+            <element signature="e#2754#2786#0" expanded="false" />
+            <element signature="e#2850#3152#0" expanded="false" />
+            <element signature="e#3118#3148#0" expanded="false" />
+            <element signature="e#3214#4184#0" expanded="false" />
+            <element signature="e#4149#4180#0" expanded="false" />
+            <element signature="e#4241#4551#0" expanded="false" />
+            <element signature="e#4516#4547#0" expanded="false" />
+            <element signature="e#4608#5279#0" expanded="false" />
+            <element signature="e#5244#5275#0" expanded="false" />
+            <element signature="e#5323#5614#0" expanded="false" />
+            <element signature="e#5579#5610#0" expanded="false" />
+            <element signature="e#5680#5879#0" expanded="false" />
+            <element signature="e#5844#5875#0" expanded="false" />
+            <element signature="e#5936#6310#0" expanded="false" />
+            <element signature="e#6210#6241#0" expanded="false" />
+            <element signature="e#6268#6307#0" expanded="false" />
+            <element signature="e#6358#6928#0" expanded="false" />
+            <element signature="e#6893#6924#0" expanded="false" />
+            <element signature="e#6987#7193#0" expanded="false" />
+            <element signature="e#7158#7189#0" expanded="false" />
+            <element signature="e#7256#7342#0" expanded="false" />
           </folding>
         </state>
       </provider>

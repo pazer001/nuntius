@@ -8,28 +8,14 @@
 
 }
 
-.chat-box {
-    width: 20%;
-    float: left;
-}
+/*.chat-box {*/
+    /*width: 20%;*/
+    /*float: left;*/
+/*}*/
 
 
 .chat-box .material-icons {
     cursor: pointer;
-}
-
-.chat-box .material-icons:hover {
-    opacity: 0.75;
-
-}
-.chat-box .card-panel {
-    padding: 0px;
-    transition: background-color 1s ease;
-    -webkit-transition: background-color 1s ease;
-}
-
-.chat-box th {
-    padding: 0px;
 }
 
 .send-button svg {
@@ -154,3 +140,11 @@
     width: 50%!important;
     text-align: center;
 }
+
+.pointer {
+    cursor: pointer;
+}
+
+/*.actions-table thead th, .actions-table tbody td {*/
+    /*text-align: center!important;*/
+/*}*/

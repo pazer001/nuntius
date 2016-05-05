@@ -36,6 +36,34 @@ class Agents {
         });
         return loginPromise;
     }
+
+    addAgent(companyId, agentName, agentRealName, agentEmail, agentPassword, agentLevel, deskName) {
+        return new Promise((resolve) => {
+            let addAgentQuery   =   `INSERT INTO nuntius.agents(company_id, desk, name, real_name, password, email, level_id)
+                                    VALUES(
+                                        '${companyId}',
+                                        '${deskName}',
+                                        '${agentName}',
+                                        '${agentRealName}',
+                                        '${agentPassword}',
+                                        '${agentEmail}',
+                                        '${agentLevel}'
+                                    )`,
+                resultData      =   {};
+            DB.Q(addAgentQuery).then((data) => {
+                if(DB.lastInsertedId()) {
+                    resultData  =   {
+                        code: 200
+                    }
+                } else {
+                    resultData  =   {
+                        code: 400
+                    }
+                }
+                resolve(resultData)
+            })
+        })
+    }
 }
 
 const agents      =   new Agents();

@@ -1,3 +1,37 @@
+export function settings(state = {}, action) {
+    let data;
+    switch (action.type) {
+        case 'SHOW_ADD_AGENT_DIALOG':
+            data    =   Object.assign({}, state);
+            data.showAddAgentDialog     =   action.payload;
+            return data;
+
+        case 'HIDE_ADD_AGENT_DIALOG':
+            data    =   Object.assign({}, state);
+            data.showAddAgentDialog     =   action.payload;
+            return data;
+
+        case 'ADD_AGENT':
+            data    =   Object.assign({}, state);
+            if(!action.payload) data.addAgentErrorFieldLength = true;
+            if(action.payload) {
+                data.addAgentErrorFieldLength   =   false;
+                data.addAgentResult             =   action.payload;
+            }
+            return data;
+    }
+    return state;
+}
+
+export function brands(state = {}, action) {
+    switch (action.type) {
+        case 'SET_BRANDS':
+            return action.payload
+    }
+    return state;
+}
+
+
 export function login(state = {}, action) {
     switch (action.type) {
         case 'LOGIN_AGENT':
@@ -66,6 +100,14 @@ export function banners(state = {}, action) {
             let data    =   Object.assign({}, state);
             data.selectedBannerSessionHash    =   action.payload;
             return data
+    }
+    return state;
+}
+
+export function statistics(state = {}, action) {
+    switch (action.type) {
+        case 'GET_CHAT_STATISTICS':
+            return action.payload;
     }
     return state;
 }

@@ -13,31 +13,51 @@ class Chat {
         DB.Q(query);
     }
 
-    postMessageRedis(companyId) {
-        let query   =   `SELECT
-                            messages.source,
-                            messages.message,
-                            messages.agent_id,
-                            messages.user_id,
-                            messages.datetime,
-                            messages.session_hash
-                        FROM
-                            nuntius.messages
-                        JOIN nuntius.sessions ON sessions.hash = messages.session_hash
-                        AND sessions.state = '1'
-                        AND sessions.company_id = '${companyId}'`;
+    postMessageRedis(sessionHash, companyId) {
 
-        DB.Q(query).then((messages) => {
-            let messagesLength  =   messages.length,
-                messagesIndex   =   0,
-                redisData       =   {};
-            for(messagesIndex; messagesIndex < messagesLength; messagesIndex++) {
-                if(!redisData[messages[messagesIndex].session_hash]) redisData[messages[messagesIndex].session_hash]    =   [];
-                messages[messagesIndex].datetime    =   moment(messages[messagesIndex].datetime).format('YYYY-MM-DD HH:mm:ss');
-                redisData[messages[messagesIndex].session_hash].push(messages[messagesIndex])
-            }
-            redis.set(`messages:${companyId}`, JSON.stringify(redisData));
-        });
+        //Set Redis Messages
+        let messagesQuery   =   `SELECT
+                                    messages.source,
+                                    messages.message,
+                                    messages.agent_id,
+                                    messages.user_id,
+                                    DATE_FORMAT(messages.datetime, '%Y-%m-%d %H:%i:%s.%f') AS datetime,
+                                    messages.session_hash
+                                FROM
+                                    nuntius.messages WHERE messages.session_hash = '${sessionHash}'`,
+            redisMessages   =   {};
+        DB.Q(messagesQuery).then((messages) => {
+            redis.get(`messages:${companyId}`, (err, data) => {
+                redisMessages   =   JSON.parse(data) || {};
+                redisMessages[sessionHash]  =   messages;
+                redis.set(`messages:${companyId}`, JSON.stringify(redisMessages))
+            })
+        })
+
+        //Set Redis Chats
+        let chatsQuery   =   `SELECT
+                                chats.last_message,
+                                chats.brand_id,
+                                chats.company_id,
+                                chats.session_hash,
+                                chats.user_messages,
+                                chats.agent_messages,
+                                chats.country_code,
+                                chats.user_id,
+                                chats.datetime
+                            FROM
+                                nuntius.chats WHERE chats.session_hash = '${sessionHash}'`,
+            redisChats   =   {};
+
+        DB.Q(chatsQuery).then((chats) => {
+
+            redis.get(`chats:${companyId}`, (err, data) => {
+
+                redisChats   =   JSON.parse(data) || {};
+                redisChats[sessionHash]  =   chats[0];
+                redis.set(`chats:${companyId}`, JSON.stringify(redisChats))
+            })
+        })
     }
 
     postMessage(sessionHash, message, source, companyId) {
@@ -51,7 +71,7 @@ class Chat {
 
             return DB.Q(query).then((data) => {
                 if(DB.lastInsertedId()) {
-                    that.postMessageRedis(companyId);
+                    that.postMessageRedis(sessionHash, companyId);
                     responseData    =   {
                         code: 200,
                         text: 'Message added successfully.'
@@ -88,7 +108,8 @@ class Chat {
             }
 
             that.getSessionsRedis(companyId).then((sessions) => {
-                let sessionsLength  =   Object.keys(sessions).length, data;
+                let sessionsLength  =   Object.keys(sessions).length,
+                    data;
                 if(sessionsLength) {
                     data = {
                         dataName: 'sessions',
@@ -97,29 +118,37 @@ class Chat {
                     };
                     resolve(data);
                 } else {
-                    let query   =   `SELECT sessions.hash, sessions.id, sessions.brand_id, sessions.user_id, sessions.datetime FROM nuntius.sessions WHERE sessions.state = '1' AND sessions.company_id = ${companyId} AND sessions.last_activity IS NOT NULL ORDER BY sessions.last_activity ASC`;
-                    DB.Q(query).then((queryData) => {
-                        let data    =   {};
-                        if(queryData) {
-                            let responseData    =   {};
-                            for (let i in queryData) {
-                                responseData[queryData[i].hash] =   queryData[i];
-                            }
-
-                            data    =   {
-                                dataName: 'sessions',
-                                code: 200,
-                                data: responseData
-                            }
-                        } else {
-                            data    =   {
-                                code: 400,
-                                data: {}
-                            }
-                        }
-                        resolve(data);
-                    });
+                    data    =   {
+                        dataName: 'sessions',
+                        code: 400,
+                        data: {}
+                    }
+                    resolve(data)
                 }
+                // else {
+                //     let query   =   `SELECT sessions.hash, sessions.id, sessions.brand_id, sessions.user_id, sessions.datetime FROM nuntius.sessions WHERE sessions.state = '1' AND sessions.company_id = ${companyId} AND sessions.last_activity IS NOT NULL ORDER BY sessions.last_activity ASC`;
+                //     DB.Q(query).then((queryData) => {
+                //         let data    =   {};
+                //         if(queryData) {
+                //             let responseData    =   {};
+                //             for (let i in queryData) {
+                //                 responseData[queryData[i].hash] =   queryData[i];
+                //             }
+                //
+                //             data    =   {
+                //                 dataName: 'sessions',
+                //                 code: 200,
+                //                 data: responseData
+                //             }
+                //         } else {
+                //             data    =   {
+                //                 code: 400,
+                //                 data: {}
+                //             }
+                //         }
+                //         resolve(data);
+                //     });
+                // }
             })
 
 
@@ -137,7 +166,6 @@ class Chat {
 
     getChats(companyId) {
         let data    =   {}, that = this;
-
         return new Promise(function(resolve, reject) {
             companyId   =   Number(mysql.escape(companyId));
             if(!companyId) {
@@ -146,7 +174,6 @@ class Chat {
                 data['text']    =   'Problem Occurred';
                 resolve(data);
             }
-
 
             that.getChatsRedis(companyId).then((chats) => {
                 let chatsLength =   Object.keys(chats).length, data = {};
@@ -190,15 +217,17 @@ class Chat {
     
     getData(companyId, chatHashes) {
         let that    =   this,
-            i = 0,
             responseData = {},
             actionsController      =   require('../actions/index');
         return new Promise((resolve) => {
             Promise
                 .all([that.getChats(companyId), that.getSessions(companyId), that.getMessages(companyId, chatHashes), actionsController.getActions(companyId)])
                 .then((data) => {
-                    for(i; i < data.length; i++) {
-                        responseData[data[i].dataName]  =   data[i];
+                    let dataLength  =   data.length,
+                        index       =   0
+                    for(index; index < dataLength; index++) {
+                        responseData[data[index].dataName]  =   data[index];
+                        delete responseData[data[index].dataName].dataName
                     }
                     resolve(responseData)
                 })
@@ -337,6 +366,57 @@ class Chat {
                 }
             })
 
+
+        });
+    }
+
+    getAnsweredChats(companyId) {
+        return new Promise((resolve) => {
+            let query   =   `SELECT
+                                COUNT(IF(chats.user_messages = 0 AND chats.agent_messages = 0, 1, NULL)) AS UnansweredChats,
+                                COUNT(IF(chats.user_messages > 0 OR chats.agent_messages > 0, 1, NULL)) AS AnsweredChats
+                            FROM
+                                nuntius.chats
+                            WHERE
+                                chats.datetime > UTC_TIMESTAMP() - INTERVAL 1 MONTH
+                            AND chats.company_id = '${companyId}'`,
+                returnData    =   {};
+            DB.Q(query).then((data) => {
+                returnData    =   {
+                    dataName: 'getAnsweredChats',
+                    data: data[0] || []
+                }
+                resolve(returnData)
+            })
+        })
+    }
+
+    getChatStatistics(companyId) { 
+        let that    =   this;
+        return new Promise(function (resolve, reject) {
+            if(!companyId) {
+                let result = {
+                    code: 400,
+                    text: 'No Company ID transferred'
+                };
+                resolve(result);
+                return;
+            }
+
+            
+            Promise
+                .all([that.getAnsweredChats(companyId)])
+                .then((data) => {
+                    let dataIndex   =   0,
+                        dataLength  =   data.length,
+                        returnData  =   {};
+                    for(dataIndex; dataIndex < dataLength; dataIndex++) {
+                        returnData[data[dataIndex].dataName]    =   data[dataIndex];
+                        delete returnData[data[dataIndex].dataName].dataName
+                    }
+
+                    resolve(returnData);
+                })
 
         });
     }

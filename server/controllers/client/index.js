@@ -33,15 +33,17 @@ class Client {
                 if(!sessions || !sessions[sessionHash]) {resolve([]); return}
                 let sessionsIndex   =   0,
                     sessionsLength  =   sessions[sessionHash].length,
-                    returnData      =   [];
+                    returnData      =   [],
+                    datetime,
+                    lastDatetime;
 
                 for(sessionsIndex; sessionsIndex < sessionsLength; sessionsIndex++) {
-                    // console.log(sessions[sessionHash][sessionsIndex].datetime, moment.utc(lastTimestamp).format('YYYY-MM-DD HH:mm:ss'))
-                    if(moment(sessions[sessionHash][sessionsIndex].datetime).isAfter(moment.utc(lastTimestamp).format('YYYY-MM-DD HH:mm:ss'))) {
+                    datetime        =   new Date(sessions[sessionHash][sessionsIndex].datetime).getTime();
+                    lastDatetime    =   new Date(lastTimestamp).getTime();
+                    if(moment(datetime).isAfter(lastDatetime)) {
                         returnData.push(sessions[sessionHash][sessionsIndex])
                     }
                 }
-                // console.log(returnData)
                 resolve(returnData)
             })
         });
@@ -69,7 +71,6 @@ class Client {
                 bannersController.getBannersActions(companyId, sessionHash)]
                 )
                 .then((data) => {
-                    console.log(data)
                     returnData    =   {
                         code: 200,
                         dataChat: data[0],

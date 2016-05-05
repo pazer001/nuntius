@@ -34,6 +34,7 @@ module.exports  =   function() {
 
             for(actionsIndex; actionsIndex < actionsLength; actionsIndex++) {
                 if(!actionsData[actions[actionsIndex].company_id]) actionsData[actions[actionsIndex].company_id]  =   [];
+                actions[actionsIndex].timestamp     =   moment(actions[actionsIndex].timestamp).format('YYYY-MM-DD HH:mm:ss.SSS');
                 actionsData[actions[actionsIndex].company_id].push(actions[actionsIndex]);
             }
 
@@ -44,7 +45,6 @@ module.exports  =   function() {
                     redis.del(`actions:${companiesIdsObject[companiesIdsObjectIndex]}`);
                 }
             }
-            console.log('Actions Cron');
             console.timeEnd('Actions')
         })
     })
